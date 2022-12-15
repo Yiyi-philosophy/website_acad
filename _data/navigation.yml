@@ -3,8 +3,8 @@ main:
   - title: "About Me"
     url: "/yiran.ding/#about-me"
 
-  - title: "News"
-    url: "/yiran.ding/#-news"
+  - title: "Recent Task"
+    url: "/yiran.ding/#-recent-task"
 
   - title: "Publications"
     url: "/yiran.ding/#-publications"
@@ -14,9 +14,6 @@ main:
 
   - title: "Educations"
     url: "/yiran.ding/#-educations"
-
-  - title: "Invited Talks"
-    url: "/yiran.ding/#-invited-talks"
 
   - title: "Internships"
     url: "/yiran.ding/#-internships"
