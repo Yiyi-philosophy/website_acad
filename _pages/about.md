@@ -32,19 +32,16 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 
 # 📝 Publications 
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='about.assets/Figure01.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+  
 *Nov. 2021 - Aug. 2022*: Medical Image Processing
-
-<table><tr>
-<td><img src='about.assets/Figure01.jpg' width="33%" border=0></td>
-<td><img src='about.assets/Figure06.jpg' width="33%" border=0></td>
-</tr></table>
-
 - Led and designed the project of automatically evaluating finger tapping videos of Parkinson’s disease patients. 
 - Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
 - Utilized: Pose estimation (Mediapipe Hands), RIFE algorithm (Time Series Interpolation), LSTM, FCN.
 
 <img src="about.assets/Figure10.jpg" alt="Figure10" width="33%" />
-
+</div></div>
 
 # 🎖 Honors and Awards
 
