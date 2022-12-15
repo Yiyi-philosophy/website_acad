@@ -20,7 +20,7 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 - Machine Learning
 - Computer Vision
 
-# 🔥 News
+# 🔥 Recent Task
 
 *Oct. 2022 - (Now)*: Preparing for **ASC** (Asian Supercomputer Community)
 
