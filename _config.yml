@@ -9,7 +9,7 @@
 title                    : "Yiran Ding (丁羿然)"
 description              : "Here is Yiran Ding's website."
 repository               : "Yiyi-philosophy/yiran.ding"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      : 
