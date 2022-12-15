@@ -32,18 +32,17 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 
 # 📝 Publications 
 
-
 *Nov. 2021 - Aug. 2022*: Medical Image Processing
 
-![Figure01](about.assets/Figure01.jpg)
+<img src="about.assets/Figure01.jpg" alt="Figure01" style="zoom: 33%;" />
 
 - Led and designed the project of automatically evaluating finger tapping videos of Parkinson’s disease patients. 
 - Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
 - Utilized: Pose estimation (Mediapipe Hands), RIFE algorithm (Time Series Interpolation), LSTM, FCN.
 
-![Figure06](about.assets/Figure06.jpg)
+<img src="about.assets/Figure06.jpg" alt="Figure06" style="zoom:33%;" />
 
-![Figure10](about.assets/Figure10.jpg)
+<img src="about.assets/Figure10.jpg" alt="Figure10" style="zoom:33%;" />
 
 
 # 🎖 Honors and Awards
