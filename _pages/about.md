@@ -32,7 +32,7 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='_pages/about.assets/Figure01.jpg' alt="sym" width="50%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%"></div></div>
   
 <div class='paper-box-text' markdown="1">
   
@@ -41,7 +41,7 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 - Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
 - Utilized: Pose estimation (Mediapipe Hands), RIFE algorithm (Time Series Interpolation), LSTM, FCN.
 
-<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="33%" />
+<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
 </div></div>
 
 # 🎖 Honors and Awards
