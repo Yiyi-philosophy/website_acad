@@ -89,6 +89,12 @@ return C
 - Andrew Ng: Machine learning
 - MIT 18.06: Linear Algebra
 
+# 📰 Summarize for some Papers
 
+## MLsys
+[Slide : In Defense Of Smart Algorithms Over Hardware Acceleration For Large-Scale Deep Learning Systems](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#slide--in-defense-of-smart-algorithms-over-hardware-acceleration-for-large-scale-deep-learning-systems)
+- This paper propose SLIDE (Sub-Linear Deep learning Engine) that uniquely blends smart randomized algorithms, with **multi-core parallelism** and workload optimization.
+- Using the classical backpropagation **message passing** type implementation rather than vector multiplication based and taking full advantage of sparsity.
+- The extreme sparsity and randomness in gradient updates allow us to asynchronously parallelize the accumulation step of the gradient across different training data without leading to a considerable amount of overlapping updates.
 
 # 📈 Internships
