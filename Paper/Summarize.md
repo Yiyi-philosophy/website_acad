@@ -38,7 +38,7 @@
 
   - 2 LOCALITY SENSITIVE HASHING
 
-    <img src="Paper/assets/image (3).png" alt="image (3)" width="100%" />
+    <img src="Paper/Summarize.assets/image (3).png" alt="image (3)" width="100%" />
 
       - **Initialization:**
 
@@ -46,7 +46,7 @@
 
         
 
-    <img src="Paper/assets/image (4).png" alt="image (4)" width="80%" />
+    <img src="Paper/assets/Summarize.image (4).png" alt="image (4)" width="80%" />
 
       - **Sparse Backpropagation or Gradient Update:**
 
@@ -68,13 +68,13 @@
 
     - 4.2 Updating Overhead
 
-      - dynamically change the update frequency of hash tables to reduce the overhead.
+      - Dynamically change the update frequency of hash tables to reduce the overhead.
 
-      - $N_0 e^{\lambda i}$
+        -  $N_0 e^{\lambda i}$
 
-      - the gradient updates in the initial stage of the training are larger than those in the later stage
+      - The gradient updates in the initial stage of the training are larger than those in the later stage
 
-      - reservoir sampling algorithm
+      - Reservoir sampling algorithm
 
   - 6 CONCLUSION AND FUTURE WORK
 
