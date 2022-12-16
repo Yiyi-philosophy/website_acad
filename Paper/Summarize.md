@@ -38,7 +38,7 @@
 
   - 2 LOCALITY SENSITIVE HASHING
 
-    <img src="Paper/Summarize.assets/image (3).png" alt="image (3)" width="100%" />
+    <img src="Summarize.assets/image (3).png" alt="image (3)" width="100%" />
 
       - **Initialization:**
 
@@ -46,7 +46,7 @@
 
         
 
-    <img src="Paper/assets/Summarize.image (4).png" alt="image (4)" width="80%" />
+    <img src="Summarize.assets/image (4).png" alt="image (4)" width="80%" />
 
       - **Sparse Backpropagation or Gradient Update:**
 
