@@ -24,6 +24,11 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 
 *Oct. 2022 - (Now)*: Preparing for **ASC** (Asian Supercomputer Community)
 
+<div class='paper-box'><div class='paper-box-image'><div>
+  <img src='_pages/about.assets/performance analysis.png' alt="pa" width="100%">
+</div></div>
+  
+<div class='paper-box-text' markdown="1">
 *July. 2022 - Sept. 2022*: **DGEMM**: Double Precision General Matrix Multiplication
 - Using 9 ways to achieve Matrix Multiplication, including methods of **Cache-oblivious** (Recursive) and **Z-Morton**.
 - Testing Matrix size is from 16 to 2048, the best function is **82% faster** than standard function.
@@ -41,7 +46,7 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 | dgemm8      | Rec+2\*2+reg        | 0.3222     | 0.3791     | 0.2524     | 0.2611     | 0.2675     | 0.2885     | 0.2012     | 0.1832     | 0.2694 |                 |
 | dgemm9      | Rec+2\*2+Z          | 0.4667     | 0.6500     | 0.3016     | 0.2914     | 0.2884     | 0.2667     | 0.2086     | 0.1747     | 0.3310 |                 |
 | dgemm10     | Rec+2\*2+reg+Z      | 0.4722     | 0.4821     | 0.3019     | 0.2962     | 0.2929     | 0.2819     | 0.1992     | **0.1743** | 0.3126 |                 |
-
+</div></div>
 
 # 📝 Publications 
 
