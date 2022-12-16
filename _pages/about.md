@@ -33,19 +33,192 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 - Using 9 ways to achieve Matrix Multiplication, including methods of **Cache-oblivious** (Recursive) and **Z-Morton**.
 - Testing Matrix size is from 16 to 2048, the best function is **82% faster** than standard function.
 
-| matrix size | Remark             | 16         | 32         | 64         | 128        | 256        | 512        | 1024       | 2048       | Avg    | Note            |
-| ----------- | ------------------ | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ------ | --------------- |
-| dgemm0      | Standard           | 1.80E+04   | 1.20E+05   | 1.06E+06   | 7.92E+06   | 6.14E+07   | 5.52E+08   | 6.49E+09   | 5.62E+10   |        | Running time    |
-| dgemm1      | 1 register         | 0.5778     | 0.5769     | 0.4326     | 0.4755     | 0.5350     | 0.6277     | 0.6871     | 0.8118     | 0.5905 | Ratio to dgemm0 |
-| dgemm2      | 2\*2 block +12\*reg | **0.2667** | **0.2843** | **0.2072** | **0.2061** | **0.2052** | **0.2138** | **0.1865** | 0.2159     | 0.2232 |                 |
-| dgemm4      | 2\*2 (B=2)          | 0.4333     | 0.4447     | 0.3186     | 0.3647     | 0.3468     | 0.3641     | 0.2510     | 0.2545     | 0.3472 |                 |
-| dgemm5_1    | matrix wise B=2    | 1.4088     | 1.6700     | 1.5201     | 1.4458     | 1.3407     | 1.2780     | 1.2933     | 1.2396     | 1.3995 |                 |
-| dgemm5      | matrix wise B=4    | 1.7500     | 1.6966     | 1.2433     | 1.4510     | 1.3825     | 1.3520     | 0.9201     | 0.8443     | 1.3300 |                 |
-| dgemm6      | **Recursive**      | 1.2611     | 1.4489     | 0.9475     | 1.1851     | 1.0745     | 1.2724     | 0.7083     | 0.6602     | 1.0698 |                 |
-| dgemm7      | Rec+2\*2            | 0.4111     | 0.4713     | 0.3027     | 0.3341     | 0.3486     | 0.3711     | 0.2455     | 0.2276     | 0.3390 |                 |
-| dgemm8      | Rec+2\*2+reg        | 0.3222     | 0.3791     | 0.2524     | 0.2611     | 0.2675     | 0.2885     | 0.2012     | 0.1832     | 0.2694 |                 |
-| dgemm9      | Rec+2\*2+Z          | 0.4667     | 0.6500     | 0.3016     | 0.2914     | 0.2884     | 0.2667     | 0.2086     | 0.1747     | 0.3310 |                 |
-| dgemm10     | Rec+2\*2+reg+Z      | 0.4722     | 0.4821     | 0.3019     | 0.2962     | 0.2929     | 0.2819     | 0.1992     | **0.1743** | 0.3126 |                 |
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-4x00{background-color:#ffffff;border-color:#000000;color:#000000;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-8c31{background-color:#ffffff;border-color:#000000;color:#000000;text-align:left;vertical-align:middle}
+.tg .tg-w22m{background-color:#ffffff;border-color:#000000;color:#000000;font-weight:bold;text-align:left;vertical-align:middle}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">matrix size</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">Remark</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">16</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">32</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">64</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">128</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">256</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">512</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">1024</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">2048</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">Avg</span></th>
+    <th class="tg-4x00"><span style="font-weight:var(--base-text-weight-semibold, 600)">Note</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-8c31">dgemm0</td>
+    <td class="tg-8c31">Standard</td>
+    <td class="tg-8c31">1.80E+04</td>
+    <td class="tg-8c31">1.20E+05</td>
+    <td class="tg-8c31">1.06E+06</td>
+    <td class="tg-8c31">7.92E+06</td>
+    <td class="tg-8c31">6.14E+07</td>
+    <td class="tg-8c31">5.52E+08</td>
+    <td class="tg-8c31">6.49E+09</td>
+    <td class="tg-8c31">5.62E+10</td>
+    <td class="tg-8c31"></td>
+    <td class="tg-8c31">Running time</td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm1</td>
+    <td class="tg-8c31">1 register</td>
+    <td class="tg-8c31">0.5778</td>
+    <td class="tg-8c31">0.5769</td>
+    <td class="tg-8c31">0.4326</td>
+    <td class="tg-8c31">0.4755</td>
+    <td class="tg-8c31">0.5350</td>
+    <td class="tg-8c31">0.6277</td>
+    <td class="tg-8c31">0.6871</td>
+    <td class="tg-8c31">0.8118</td>
+    <td class="tg-8c31">0.5905</td>
+    <td class="tg-8c31">Ratio to dgemm0</td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm2</td>
+    <td class="tg-8c31">2*2 block +12*reg</td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.2667</span></td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.2843</span></td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.2072</span></td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.2061</span></td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.2052</span></td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.2138</span></td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.1865</span></td>
+    <td class="tg-8c31">0.2159</td>
+    <td class="tg-8c31">0.2232</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm4</td>
+    <td class="tg-8c31">2*2 (B=2)</td>
+    <td class="tg-8c31">0.4333</td>
+    <td class="tg-8c31">0.4447</td>
+    <td class="tg-8c31">0.3186</td>
+    <td class="tg-8c31">0.3647</td>
+    <td class="tg-8c31">0.3468</td>
+    <td class="tg-8c31">0.3641</td>
+    <td class="tg-8c31">0.2510</td>
+    <td class="tg-8c31">0.2545</td>
+    <td class="tg-8c31">0.3472</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm5_1</td>
+    <td class="tg-8c31">matrix wise B=2</td>
+    <td class="tg-8c31">1.4088</td>
+    <td class="tg-8c31">1.6700</td>
+    <td class="tg-8c31">1.5201</td>
+    <td class="tg-8c31">1.4458</td>
+    <td class="tg-8c31">1.3407</td>
+    <td class="tg-8c31">1.2780</td>
+    <td class="tg-8c31">1.2933</td>
+    <td class="tg-8c31">1.2396</td>
+    <td class="tg-8c31">1.3995</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm5</td>
+    <td class="tg-8c31">matrix wise B=4</td>
+    <td class="tg-8c31">1.7500</td>
+    <td class="tg-8c31">1.6966</td>
+    <td class="tg-8c31">1.2433</td>
+    <td class="tg-8c31">1.4510</td>
+    <td class="tg-8c31">1.3825</td>
+    <td class="tg-8c31">1.3520</td>
+    <td class="tg-8c31">0.9201</td>
+    <td class="tg-8c31">0.8443</td>
+    <td class="tg-8c31">1.3300</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm6</td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">Recursive</span></td>
+    <td class="tg-8c31">1.2611</td>
+    <td class="tg-8c31">1.4489</td>
+    <td class="tg-8c31">0.9475</td>
+    <td class="tg-8c31">1.1851</td>
+    <td class="tg-8c31">1.0745</td>
+    <td class="tg-8c31">1.2724</td>
+    <td class="tg-8c31">0.7083</td>
+    <td class="tg-8c31">0.6602</td>
+    <td class="tg-8c31">1.0698</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm7</td>
+    <td class="tg-8c31">Rec+2*2</td>
+    <td class="tg-8c31">0.4111</td>
+    <td class="tg-8c31">0.4713</td>
+    <td class="tg-8c31">0.3027</td>
+    <td class="tg-8c31">0.3341</td>
+    <td class="tg-8c31">0.3486</td>
+    <td class="tg-8c31">0.3711</td>
+    <td class="tg-8c31">0.2455</td>
+    <td class="tg-8c31">0.2276</td>
+    <td class="tg-8c31">0.3390</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm8</td>
+    <td class="tg-8c31">Rec+2*2+reg</td>
+    <td class="tg-8c31">0.3222</td>
+    <td class="tg-8c31">0.3791</td>
+    <td class="tg-8c31">0.2524</td>
+    <td class="tg-8c31">0.2611</td>
+    <td class="tg-8c31">0.2675</td>
+    <td class="tg-8c31">0.2885</td>
+    <td class="tg-8c31">0.2012</td>
+    <td class="tg-8c31">0.1832</td>
+    <td class="tg-8c31">0.2694</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm9</td>
+    <td class="tg-8c31">Rec+2*2+Z</td>
+    <td class="tg-8c31">0.4667</td>
+    <td class="tg-8c31">0.6500</td>
+    <td class="tg-8c31">0.3016</td>
+    <td class="tg-8c31">0.2914</td>
+    <td class="tg-8c31">0.2884</td>
+    <td class="tg-8c31">0.2667</td>
+    <td class="tg-8c31">0.2086</td>
+    <td class="tg-8c31">0.1747</td>
+    <td class="tg-8c31">0.3310</td>
+    <td class="tg-8c31"></td>
+  </tr>
+  <tr>
+    <td class="tg-8c31">dgemm10</td>
+    <td class="tg-8c31">Rec+2*2+reg+Z</td>
+    <td class="tg-8c31">0.4722</td>
+    <td class="tg-8c31">0.4821</td>
+    <td class="tg-8c31">0.3019</td>
+    <td class="tg-8c31">0.2962</td>
+    <td class="tg-8c31">0.2929</td>
+    <td class="tg-8c31">0.2819</td>
+    <td class="tg-8c31">0.1992</td>
+    <td class="tg-w22m"><span style="font-weight:var(--base-text-weight-semibold, 600)">0.1743</span></td>
+    <td class="tg-8c31">0.3126</td>
+    <td class="tg-8c31"></td>
+  </tr>
+</tbody>
+</table>
+  
 </div></div>
 
 # 📝 Publications 
