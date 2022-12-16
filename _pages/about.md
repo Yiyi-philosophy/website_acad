@@ -10,7 +10,8 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). 
-And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
+
+#### And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 
 ## My Research Interests:
 
