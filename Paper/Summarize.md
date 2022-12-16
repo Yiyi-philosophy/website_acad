@@ -38,7 +38,7 @@
 
   - 2 LOCALITY SENSITIVE HASHING
 
-    ![image.png](https://flowus.cn/preview/ca10b89e-9bd4-44a9-af6c-c50a43ebaee9)
+    <img src="Paper/Summarize.assets/image (3).png" alt="image (3)" width="100%" />
 
       - **Initialization:**
 
@@ -46,7 +46,7 @@
 
         
 
-        ![image.png](https://flowus.cn/preview/7365f2c9-a8de-4acb-bee7-589d7f40957d)
+    <img src="Paper/Summarize.assets/image (4).png" alt="image (4)" width="80%" />
 
       - **Sparse Backpropagation or Gradient Update:**
 
