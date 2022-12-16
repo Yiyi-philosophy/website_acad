@@ -46,7 +46,7 @@
 
         
 
-    <img src="Summarize.assets/image (4).png" alt="image (4)" width="80%" />
+    <img src="Summarize.assets/image (4).png" alt="image (4)" width="50%" />
 
       - **Sparse Backpropagation or Gradient Update:**
 
