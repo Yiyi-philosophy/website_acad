@@ -25,7 +25,7 @@ And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 *Oct. 2022 - (Now)*: Preparing for **ASC** (Asian Supercomputer Community)
 
 <div class='paper-box'><div class='paper-box-image'><div>
-  <img src='_pages/about.assets/performance analysis.png' alt="pa" width="100%">
+  <img src='_pages/about.assets/performance analysis.png' alt="pa" width="100%"><img src="_pages/about.assets/image-20220930121303217.png" alt="image10" width="100%" />
 </div></div>
   
 <div class='paper-box-text' markdown="1">
@@ -45,7 +45,7 @@ if (n==1) {
 } 
 return C
 ```
-<img src="_pages/about.assets/image-20220930121303217.png" alt="image10" width="100%" />
+
 </div></div>
 
 # 📝 Publications 
