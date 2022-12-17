@@ -10,16 +10,23 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). 
+I'm preparing for the **24 fall** applications of CS PhD.
 
 #### And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
 
-## My Research Interests:
+## Research Interests:
 
 - MLsys (Machine Learning System)
 - HPC (High Performance Computing)
 - Computer Architecture
 - Machine Learning
 - Computer Vision
+
+## Skills:
+- C, C++, Python, Matlab
+- OpenMP, MPI, CUDA
+- Linux
+- Verilog
 
 # 🔥 Recent Task
 
