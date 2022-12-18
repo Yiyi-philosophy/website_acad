@@ -160,7 +160,7 @@ bility (P1) Improvement:
 
   -  4 QUADRALIB FOR QDNN DESIGN EXPLORATION
 
-  <img src="Summarize.assets/image (6).png" alt="image (6)" width="100%" />
+      <img src="Summarize.assets/image (6).png" alt="image (6)" width="100%" />
 
     - In **Model** Level, QuadraLib defines a set of encapsulated layer modules
 
@@ -174,10 +174,10 @@ bility (P1) Improvement:
 
       - Hybrid Back-propagation for Memory Efficiency
 
-   <img src="Summarize.assets/image (7).png" alt="image (7)" width="50%" />
+  <img src="Summarize.assets/image (7).png" alt="image (7)" width="50%" />
 
       - Quadratic Optimizer Implementation
-
+      
     - 6 CONCLUSION AND DISCUSSION
 
       - QDNNs show a significant potential on learning tasks which highly depends on **extracted objects,** such as object detection, segmentation, and position recognition.
