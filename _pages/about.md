@@ -107,7 +107,7 @@ return C
 
 [QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#quadralib-a-performant-quadratic-neural-network-library-for-architecture-optimization-and-design-exploration)
 - DNNs' success depends on many supporting libraries.
-- QDNNs ($WX^2+b$) show better **non-linearity** and **learning capability**
+- QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
 - In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
 - The benefits of QDNNs: Stronger non-linearity, Higher model efficiency.
 - New Neuron Architecture Design
