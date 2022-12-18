@@ -174,8 +174,9 @@ bility (P1) Improvement:
 
       - Hybrid Back-propagation for Memory Efficiency
 
-  <img src="Summarize.assets/image (7).png" alt="image (7)" width="50%" />
-
+      <img src="Summarize.assets/image (7).png" alt="image (7)" width="50%" />
+      
+      
       - Quadratic Optimizer Implementation
       
     - 6 CONCLUSION AND DISCUSSION
