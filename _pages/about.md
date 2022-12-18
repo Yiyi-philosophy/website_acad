@@ -105,4 +105,24 @@ return C
 - Using the classical backpropagation **message passing** type implementation rather than vector multiplication based and taking full advantage of sparsity.
 - The extreme sparsity and randomness in gradient updates allow us to asynchronously parallelize the accumulation step of the gradient across different training data without leading to a considerable amount of overlapping updates.
 
+[QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#quadralib-a-performant-quadratic-neural-network-library-for-architecture-optimization-and-design-exploration)
+- DNNs' success depends on many supporting libraries.
+- QDNNs ($WX^2+b$) show better **non-linearity** and **learning capability**
+- In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
+- The benefits of QDNNs: Stronger non-linearity, Higher model efficiency.
+- New Neuron Architecture Design
+  - Extra Weights and Linear Term for Approximation Capability Improvement
+  - Hadamard Product for Computation Complexity Optimization
+  - Linear Term for Converge Performance Enhancement
+  - First-order Neuron Combination for Implementation Feasibility Improvement
+
+
+
+- 
+
+
+
+
+
+
 # 📈 Internships
