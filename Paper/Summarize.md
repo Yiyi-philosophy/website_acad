@@ -91,7 +91,7 @@
 
   - DNNs' success depends on many supporting libraries.
 
-  - QDNNs ($WX^2+b$) show better **non-linearity** and **learning capability**
+  - QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
 
   - In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
 
