@@ -42,19 +42,19 @@ I'm preparing for the **24 fall** applications of CS PhD.
 *July. 2022 - Sept. 2022*: **DGEMM**: Double Precision General Matrix Multiplication
 - Using 9 ways to achieve Matrix Multiplication, including methods of **Cache-oblivious** (Recursive) and **Z-Morton**.
 - Testing Matrix size is from 16 to 2048, the best function is **82% faster** than standard function.
-
-```C
-Define C = RMM (A, B, n)
-if (n==1) { 
-    C00 = A00 * B00 ; 
-} else{ 
-	C00 = RMM (A00 , B00 , n/2) + RMM (A01 , B10 , n/2)
-	C01 = RMM (A00 , B01 , n/2) + RMM (A01 , B11 , n/2)
-	C10 = RMM (A10 , B00 , n/2) + RMM (A11 , B10 , n/2)
-	C11 = RMM (A10 , B01 , n/2) + RMM (A11 , B11 , n/2) 
-} 
-return C
-```
+- Pseudo-code for recursive methods
+	```C
+	Define C = RMM (A, B, n)
+	if (n==1) { 
+	    C00 = A00 * B00 ; 
+	} else{ 
+		C00 = RMM (A00 , B00 , n/2) + RMM (A01 , B10 , n/2)
+		C01 = RMM (A00 , B01 , n/2) + RMM (A01 , B11 , n/2)
+		C10 = RMM (A10 , B00 , n/2) + RMM (A11 , B10 , n/2)
+		C11 = RMM (A10 , B01 , n/2) + RMM (A11 , B11 , n/2) 
+	} 
+	return C
+	```
 
 </div></div>
 
@@ -78,7 +78,7 @@ return C
 # 🎖 Honors and Awards
 
 - *2021.09* The First Prize Scholarship, Award rate 5%
-- *2022.9* Scholarship of Provincial Government, Award rate 5%
+- *2022.09* Scholarship of Provincial Government, Award rate 5%
 
 # 📖 Educations
 
