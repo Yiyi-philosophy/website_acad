@@ -28,9 +28,10 @@ layout: compress
         </div>
         <!--不蒜子访问统计-->
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_uv">Page view: <span id="busuanzi_value_site_uv"></span> times</span>
+        <span id="busuanzi_container_site_uv">Page view: <span id="busuanzi_value_site_uv"></span> visitors</span>
+        
         <!--leancloud访问统计-->
-        Page view: &nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>.
+         / Page view: &nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>.
         
         <!-- 同时兼容http与https -->
         <script src="//unpkg.com/leancloud-storage@4.12.2/dist/av-min.js"></script>
@@ -39,7 +40,7 @@ layout: compress
             AV.init({
               appId: "kHET4Vnq0DyflHXlRJLBFCv2-MdYXbMMI",
               appKey: "LDttTQBPk6PibDLe7jy2kjaY",
-              //serverURL: "https://leancloud.api.whuzfb.cn"
+              serverURL: "https://leancloud.api.whuzfb.app"
             });
             // 自己创建的Class的名字
             var name='Counter';
