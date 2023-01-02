@@ -26,6 +26,8 @@ layout: compress
             {{ content }}
           </section>
         </div>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">Page view: <span id="busuanzi_value_site_pv"></span> times</span>
       </article>
     </div>
 
@@ -33,7 +35,8 @@ layout: compress
     Page view: &nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>.
     
     <!-- 同时兼容http与https -->
-    <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script>
         // 第一个参数是appid，第二个参数是appkey，此处的只是示例
         AV.initialize("kHET4Vnq0DyflHXlRJLBFCv2-MdYXbMMI", "LDttTQBPk6PibDLe7jy2kjaY");
