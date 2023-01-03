@@ -18,6 +18,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 - MLsys (Machine Learning System)
 - HPC (High Performance Computing)
+- Distributed, Parallel, and Cluster Computing
 - Computer Architecture
 - Machine Learning
 - Computer Vision
@@ -75,16 +76,6 @@ I'm preparing for the **24 fall** applications of CS PhD.
 <img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
 </div></div>
 
-# 🎖 Honors and Awards
-
-- *2021.09* The First Prize Scholarship, Award rate 5%
-- *2022.09* Scholarship of Provincial Government, Award rate 5%
-
-# 📖 Educations
-
-- *2021.09 - 2024.06 (now)*, School of Electronics & Information, HDU, Bachelor's degree. 
-- *2020.09 - 2021.06*, School of Mathematics, Hangzhou Dianzi University(HDU), Bachelor's degree. 
-
 
 # 💻 Online Courses
 
@@ -116,11 +107,21 @@ I'm preparing for the **24 fall** applications of CS PhD.
   - Linear Term for Converge Performance Enhancement
   - First-order Neuron Combination for Implementation Feasibility Improvement
 
+# 📖 Educations
 
+- *2021.09 - 2024.06 (now)*, School of Electronics & Information, HDU, Bachelor's degree. 
+- *2020.09 - 2021.06*, School of Mathematics, Hangzhou Dianzi University(HDU), Bachelor's degree. 
 
-- 
+# 🎖 Honors and Awards
 
+- *2021.09* The First Prize Scholarship, Award rate 5%
+- *2022.09* Scholarship of Provincial Government, Award rate 5%
 
+# 🎺 Activities
+
+- Vice Minister of Data Processing Department, Student association in the Faculty of Mathematics
+	- Taught new students about programming skills such as Python, Matlab, etc.
+	- Instructed them to solve NP-hard Graph Theory Problems with Heuristic Algorithms, and Time Series Forecasting Problems with LSTM Neural Networks
 
 
 
