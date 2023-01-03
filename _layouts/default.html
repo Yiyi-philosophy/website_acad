@@ -31,10 +31,12 @@ layout: compress
         <span id="busuanzi_container_site_uv">Page view: <span id="busuanzi_value_site_uv"></span> visitors</span>
         
         <!--leancloud访问统计-->
-         / Page view: &nbsp;<span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>.
+         / Page view: <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}"> - </span>.
         
         <!-- 同时兼容http与https -->
         <script src="//unpkg.com/leancloud-storage@4.12.2/dist/av-min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+        <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
         <script>
             // 第一个参数是appid，第二个参数是appkey，此处的只是示例
             AV.init({
