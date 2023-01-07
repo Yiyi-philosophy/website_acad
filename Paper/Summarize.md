@@ -122,7 +122,7 @@
 
   - Inspire more future work on advancing machine learning models for interdisciplinary research with limited computational resources
 
-
+----
 
 ### SLIDE : IN DEFENSE OF SMART ALGORITHMS OVER HARDWARE ACCELERATION FOR LARGE-SCALE DEEP LEARNING SYSTEMS
 
@@ -206,6 +206,7 @@
 
     - SLIDE has unique benefits when it comes to **random memory accesses** and **parallelism**. We anticipate that a **distributed implementation** of SLIDE would be very appealing because the communication costs are minimal due to sparse gradients.
 
+----
 
 ### QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION
 
