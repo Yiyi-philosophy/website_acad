@@ -2,6 +2,128 @@
 
 ## MLsys
 
+## Monarch: Expressive Structured Matrices for Efficient and Accurate Training
+
+- **1 Abstract**
+
+  - A popular approach to reduce their compute/memory requirements is to replace dense weight matrices with structured ones (e.g., sparse, low-rank, Fourier transform)
+
+  - Challenge
+
+    - in end-to-end training due to unfavorable efficiency-quality tradeoffs
+
+    - in dense-to-sparse fine-tuning due to lack of tractable algorithms to approximate a given dense weight matrix
+
+  - Monarch: hardware-efficient ( two block-diagonal matrices for better hardware utilization) + expressive (represent many commonly used transforms).
+
+    - new ways to train and fine-tune sparse and dense models
+
+  - Result
+
+    - End-to-End: ViT, MLP-Mixer, and GPT-2  #**2x** 
+
+    - PDE solving and MRI reconstruction tasks: **error down #40%**
+
+    - Sparse-to-Dense: GPT-2 #**2x**; BERT pretraining #**23%>** Nividia MLPerf
+
+    - Dense-to-Sparse: BERT finetuning #**1.7x**
+
+- **1 Introduction**
+
+  - Challenge:
+
+    - E2E: unfavorable efficiency–quality tradeoffs
+
+      - Model quality: expressive ability of encoding domain-specific knowledge
+
+      <img src="Summarize.assets/image (8).png" alt="image (8)" width="100%" />
+
+    - sparse training method: slow down training + x represent commonly used transforms
+
+    - structured matrice: difficult to use in E2E training
+
+  - -> Monarch (bridge between dense and sparse)
+
+    - E2E: parameterized as products of two block-diagonal matrices (up to permutation)
+
+      - optimized batch-matrix-multiply (BMM) routines on GPUs
+
+    - S2D: reverse sparsification
+
+      - sparse training ✖
+
+      - fast intermediate representation to speed up the training process of the dense model.
+
+    - D2S: fine-tuning
+
+      - **Projection** problem: finding a matrix in a class of structured matrices that is the closest to a given dense matrix
+
+      - Author found a optimal projection algorithm for Monarch parameterization  (***Theorem 1:*** Given an n×n matrix $A$, there is an $O(n^{5/2})$-time algorithm that optimally $A= LR$.)
+
+- **2 Related Work**
+
+  - butterfly matrices
+
+    - [https://dawn.cs.stanford.edu/2019/06/13/butterfly/](https://dawn.cs.stanford.edu/2019/06/13/butterfly/)
+
+    - encode the divide-and-conquer structure of many fast multiplication algorithms
+
+- **3 Monarch: Definition & Algorithms**
+
+  - 3.1 Monarch Parametrization for Square Matrices
+
+    - Definition 3.1. Let $n = m^2$. An n × n Monarch matrix has the form:
+
+    - $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R}$
+
+    <img src="Summarize.assets/image (11).png" alt="image (11)" width="100%" />
+
+    - Monarch matrices $M$ = two block-diagonal matrices multiplication
+
+    - Products of Monarch Matrices Class: $\mathcal{M} \mathcal{M}^*$ 
+
+    - $\left(\mathcal{M} \mathcal{M}^*\right)^2$ for $M_1,M_2 \in \mathcal{M} \mathcal{M}^*$
+
+    <img src="Summarize.assets/image (9).png" alt="image (9)" width="100%" />
+
+  - 3.2 Expressiveness and Efficiency
+
+    - ***Proposition 3.2:*** The matrix class $\mathcal{M} \mathcal{M}^*$ can represent convolution, Hadamard transform, Toeplitz matrices, and AFDF matrices. The matrix class $(\mathcal{M} \mathcal{M}^*)^2$ can represent the Fourier transform, discrete sine and cosine transforms (DST/DCT), the $(HD)^3$ class, Fastfood, and ACDC matrices.
+
+    - ***Parameters：***Monarch matrix $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters. And total FLOPs is $O(n\sqrt{n}) > O(n\log n)$ (butterfly matrix). But easy to implement, 2x faster than dense multiply
+
+    - 3.3 Projection on the Set M of Monarch Matrices
+
+      - Dense Matrix -> Monarch
+
+      - Given matrix $A$, find $\underset{\mathbf{M} \in \mathcal{M}}{\operatorname{argmin}}\|\mathbf{A}-\mathbf{M}\|_F^2$
+
+      - ***Theorem 1: $A=LR \sim O(n^{5/2})$***
+
+      <img src="Summarize.assets/image (10).png" alt="image (10)" width="100%" />
+
+      - To convert a pretrained model into a model with Monarch weight matrices and speed up downstream fine-tuning
+
+  - 3.4 Factorization of MM∗ Matrices
+
+    - Under mild assumptions, factorization to store and apply M efficiently
+
+- 5 Experiments
+
+  - 5.2 Sparse-to-Dense Training (reverse sparsification)
+
+    - train a GPT-2 model with Monarch weight matrices for 90% of the training iterations, then relax the constraint on the weight matrices and train them as **dense matrices** for the remaining 10% of the iterations.
+
+  - 5.3 Dense-to-Sparse Fine-tuning
+
+- 6 Conclusion
+
+  - By making structured matrices practical, our work is a first step towards unlocking tremendous performance improvements in applying sparse models to wide-ranging ML applications (including science and medicine)
+
+  - Inspire more future work on advancing machine learning models for interdisciplinary research with limited computational resources
+
+
+
 ### SLIDE : IN DEFENSE OF SMART ALGORITHMS OVER HARDWARE ACCELERATION FOR LARGE-SCALE DEEP LEARNING SYSTEMS
 
   - Abstract
