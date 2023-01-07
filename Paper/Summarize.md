@@ -36,7 +36,7 @@
 
       - Model quality: expressive ability of encoding domain-specific knowledge
 
-      <img src="Summarize.assets/image (8).png" alt="image (8)" width="100%" />
+      <img src="Summarize.assets/image (8).png" alt="image (8)" width="60%" />
 
     - sparse training method: slow down training + x represent commonly used transforms
 
@@ -76,7 +76,7 @@
 
     - $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R}$
 
-    <img src="Summarize.assets/image (11).png" alt="image (11)" width="100%" />
+    <img src="Summarize.assets/image (11).png" alt="image (11)" width="50%" />
 
     - Monarch matrices $M$ = two block-diagonal matrices multiplication
 
@@ -84,7 +84,7 @@
 
     - $\left(\mathcal{M} \mathcal{M}^*\right)^2$ for $M_1,M_2 \in \mathcal{M} \mathcal{M}^*$
 
-    <img src="Summarize.assets/image (9).png" alt="image (9)" width="100%" />
+    <img src="Summarize.assets/image (9).png" alt="image (9)" width="50%" />
 
   - 3.2 Expressiveness and Efficiency
 
@@ -100,7 +100,7 @@
 
       - ***Theorem 1: $A=LR \sim O(n^{5/2})$***
 
-      <img src="Summarize.assets/image (10).png" alt="image (10)" width="100%" />
+      <img src="Summarize.assets/image (10).png" alt="image (10)" width="50%" />
 
       - To convert a pretrained model into a model with Monarch weight matrices and speed up downstream fine-tuning
 
