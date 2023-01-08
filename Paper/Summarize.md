@@ -81,13 +81,13 @@
 
   - Products of Monarch Matrices Class: $\mathcal{M} \mathcal{M}^*$ 
 
-  - $ \left(\mathcal{M} \mathcal{M}^*\right)^2$  for $ M_1,M_2 \in \mathcal{M} \mathcal{M}^* $ 
+  - $ \left(\mathcal{M} \mathcal{M}^{\ast}\right)^2$  for $ M_1,M_2 \in \mathcal{M} \mathcal{M}^\ast $ 
 
   <img src="Summarize.assets/image (9).png" alt="image (9)" width="50%" />
 
 - 3.2 Expressiveness and Efficiency
 
-  - ***Proposition 3.2:*** The matrix class $\mathcal{M} \mathcal{M}^*$ can represent convolution, Hadamard transform, Toeplitz matrices, and AFDF matrices. The matrix class $(\mathcal{M} \mathcal{M}^*)^2$ can represent the Fourier transform, discrete sine and cosine transforms (DST/DCT), the $(HD)^3$ class, Fastfood, and ACDC matrices.
+  - ***Proposition 3.2:*** The matrix class $\mathcal{M} \mathcal{M}^\ast$ can represent convolution, Hadamard transform, Toeplitz matrices, and AFDF matrices. The matrix class $(\mathcal{M} \mathcal{M}^\ast)^2$ can represent the Fourier transform, discrete sine and cosine transforms (DST/DCT), the $(HD)^3$ class, Fastfood, and ACDC matrices.
 
   - ***Parameters:*** Monarch matrix $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters. Although total FLOPs is $O(n\sqrt{n}) > O(n\log n)$ (butterfly matrix), Monarch is easy to implement, **#2x** faster than dense multiply
 
