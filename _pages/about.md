@@ -38,7 +38,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 	<br><br>
 	<img src="_pages/about.assets/block-Z.png" alt="image10" width="100%" />
 </div></div>
-  
+
 <div class='paper-box-text' markdown="1">
 *July. 2022 - Sept. 2022*: **DGEMM**: Double Precision General Matrix Multiplication
 - Using 9 ways to achieve Matrix Multiplication, including methods of **Cache-oblivious** (Recursive) and **Z-Morton**.
@@ -65,9 +65,9 @@ I'm preparing for the **24 fall** applications of CS PhD.
   <div class="badge">SCI submitted in</div>
   <img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
 </div></div>
-  
+
 <div class='paper-box-text' markdown="1">
-  
+
 *Nov. 2021 - Aug. 2022*: Medical Image Processing
 - Led and designed the project of automatically evaluating finger tapping videos of Parkinson’s disease patients. 
 - Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
@@ -91,7 +91,20 @@ I'm preparing for the **24 fall** applications of CS PhD.
 # 📰 Summarize for some Papers
 
 ## MLsys
+
+[Monarch: Expressive Structured Matrices for Efficient and Accurate Training]([yiran.ding/Summarize.md at main · Yiyi-philosophy/yiran.ding (github.com)](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#monarch-expressive-structured-matrices-for-efficient-and-accurate-training))
+
+- This paper propose a form of matrix **Monarch** which is **hardware-efficient** and **expressive**. 
+  - **Efficient** -> Monarch matrix: $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters
+    - Although Monarch total FLOPs is $O(n\sqrt{n}) > O(n\log n)$ (butterfly matrix), it is easy to implement, **#2x** faster than dense multiply.
+  - **Expressive** -> $\mathcal{M} \mathcal{M}^*, (\mathcal{M} \mathcal{M}^*)^2$ can represent most of structured matrice.
+  - **Projection** problem -> ***Theorem 1:*** Dense Matrix $A=LR \sim O(n^{5/2})$ 
+  - **Factorization** of $\mathcal{M} \mathcal{M}^*$ Matrices -> 
+    - $\mathbf{M}=\mathbf{(P L_1 P^{\top})} \mathbf{R (P L_2 P^{\top})} \sim O(n^{5/2})$ 
+- This method can be use in End-to-End training #**2x** , PDE solving and MRI reconstruction tasks **error #-40%**, Sparse-to-Dense (GPT-2 #**2x**; BERT pretraining #**23%>** Nvidia MLPerf) and Dense-to-Sparse BERT finetuning #**1.7x**.
+
 [Slide : In Defense Of Smart Algorithms Over Hardware Acceleration For Large-Scale Deep Learning Systems](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#slide--in-defense-of-smart-algorithms-over-hardware-acceleration-for-large-scale-deep-learning-systems)
+
 - This paper propose SLIDE (Sub-Linear Deep learning Engine) that uniquely blends smart randomized algorithms, with **multi-core parallelism** and workload optimization.
 - Using the classical backpropagation **message passing** type implementation rather than vector multiplication based and taking full advantage of sparsity.
 - The extreme sparsity and randomness in gradient updates allow us to asynchronously parallelize the accumulation step of the gradient across different training data without leading to a considerable amount of overlapping updates.

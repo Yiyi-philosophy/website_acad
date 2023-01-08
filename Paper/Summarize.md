@@ -113,6 +113,8 @@
   - train a GPT-2 model with Monarch weight matrices for 90% of the training iterations, then relax the constraint on the weight matrices and train them as **dense matrices** for the remaining 10% of the iterations.
   
 - 5.3 Dense-to-Sparse Fine-tuning
+  - 
+
 
 #### 6 Conclusion
 
