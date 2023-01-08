@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yiran Ding (丁羿然)"
-description              : "You can call me "E-Ray Ding"."
+description              : "A will find a way."
 repository               : "Yiyi-philosophy/yiran.ding"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :
 author:
   name             : "Yiran Ding(丁羿然)"
   avatar           : "images/DYR512.jpg"
-  bio              : "HDU"
+  bio              : "You can call me "E-Ray Ding"."
   location         : "Hangzhou, China"
   employer         :
   pubmed           : 
