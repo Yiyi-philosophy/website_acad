@@ -139,7 +139,7 @@
 
   - **1** SLIDE **= 10x TF**
 
-#### 1 Intro
+#### 1 Introduction
 
 - the idea of **adaptive sparsity** or **adaptive dropouts**
 
@@ -205,7 +205,9 @@
 
 - SLIDE has unique benefits when it comes to **random memory accesses** and **parallelism**. We anticipate that a **distributed implementation** of SLIDE would be very appealing because the communication costs are minimal due to sparse gradients.
 
-----
+
+
+---
 
 ### QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION
 
@@ -219,7 +221,7 @@
 
 - **good accuracy** and computation consumption
 
-#### 1 Intro
+#### 1 Introduction
 
 - the benefits of QDNNs stem from the unique characteristics of the second-order polynomial form: 
 
@@ -311,7 +313,61 @@
 
 ---
 
-## AI-Sys Sp22: Machine Learning Systems 
+## ML 
+
+### Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning
+
+#### Abstract
+
+- Challenge
+  - SGD gives enormous pressure on the I/O subsystem.
+  - in HPC environments, replicate the entire dataset to node local SSDs
+- investigate the viability of partitioning the dataset among workers performing only a partial distributed exchange of samples in each training epoch
+- demonstrate that in practice validation accuracy of global shuffling can be maintained when carefully tuning the partial distributed exchange
+- 
+
+#### 1 INTRODUCTION
+
+- Challenge
+  - As datasets growing up, it is hard to store the **entire dataset** on compute node local storage, or by each node reading a subset of the samples from the parallel file system (PFS)
+- Insight
+  - random access to the input samples has been in fact identified as one of the major contributors to poor I/O performance
+- Contribution
+  - revisit data shuffling strategies when scaling deep learning applications to a large number of workers.
+
+#### 2 BACKGROUND AND MOTIVATION
+
+
+
+#### 3 DESIGN AND IMPLEMENTATION
+
+
+
+#### 4 SHUFFLING IN DISTRIBUTED SGD
+
+
+
+#### 5 EVALUATION
+
+
+
+#### 6 RELATED WORK
+
+
+
+#### 7 CONCLUSION
+
+
+
+
+
+
+
+
+
+
+
+---
 
 
 
