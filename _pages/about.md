@@ -97,7 +97,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - This paper propose a form of matrix **Monarch** which is **hardware-efficient** and **expressive**. 
   - **Efficient** -> Monarch matrix: $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters
     - Although Monarch total FLOPs is $O(n\sqrt{n}) > O(n\log n)$ (butterfly matrix), it is easy to implement, **#2x** faster than dense multiply.
-  - **Expressive** -> $\mathcal{M} \mathcal{M}^*, (\mathcal{M} \mathcal{M}^*)^2$ can represent most of structured matrice.
+  - **Expressive** -> $$\mathcal{M} \mathcal{M}^*, (\mathcal{M} \mathcal{M}^*)^2$$ can represent most of structured matrice.
   - **Projection** problem -> ***Theorem 1:*** Dense Matrix $A=LR \sim O(n^{5/2})$ 
   - **Factorization** of $\mathcal{M} \mathcal{M}^*$ Matrices -> 
     - $\mathbf{M}=\mathbf{(P L_1 P^{\top})} \mathbf{R (P L_2 P^{\top})} \sim O(n^{5/2})$ 

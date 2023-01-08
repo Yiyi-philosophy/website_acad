@@ -81,7 +81,7 @@
 
   - Products of Monarch Matrices Class: $\mathcal{M} \mathcal{M}^*$ 
 
-  - $\left(\mathcal{M} \mathcal{M}^*\right)^2$ for $M_1,M_2 \in \mathcal{M} \mathcal{M}^*$
+  - $$\left(\mathcal{M} \mathcal{M}^*\right)^2 \text{ for } M_1,M_2 \in \mathcal{M} \mathcal{M}^*$$
 
   <img src="Summarize.assets/image (9).png" alt="image (9)" width="50%" />
 
@@ -97,7 +97,7 @@
 
   - Given matrix $A$, find $\underset{\mathbf{M} \in \mathcal{M}}{\operatorname{argmin}}\|\mathbf{A}-\mathbf{M}\|_F^2$
 
-  - ***Theorem 1: $A=LR \sim O(n^{5/2})$***
+  - ***Theorem 1:*** $A=LR \sim O(n^{5/2})$
 
   <img src="Summarize.assets/image (10).png" alt="image (10)" width="50%" />
 
@@ -113,7 +113,6 @@
   - train a GPT-2 model with Monarch weight matrices for 90% of the training iterations, then relax the constraint on the weight matrices and train them as **dense matrices** for the remaining 10% of the iterations.
   
 - 5.3 Dense-to-Sparse Fine-tuning
-  - 
 
 
 #### 6 Conclusion
