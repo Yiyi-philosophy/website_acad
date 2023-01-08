@@ -92,7 +92,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 ## MLsys
 
-[Monarch: Expressive Structured Matrices for Efficient and Accurate Training]([yiran.ding/Summarize.md at main · Yiyi-philosophy/yiran.ding (github.com)](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#monarch-expressive-structured-matrices-for-efficient-and-accurate-training))
+[Monarch: Expressive Structured Matrices for Efficient and Accurate Training](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#monarch-expressive-structured-matrices-for-efficient-and-accurate-training)
 
 - This paper propose a form of matrix **Monarch** which is **hardware-efficient** and **expressive**. 
   - **Efficient** -> Monarch matrix: $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters
