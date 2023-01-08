@@ -4,256 +4,255 @@
 
 ### Monarch: Expressive Structured Matrices for Efficient and Accurate Training
 
-- **1 Abstract**
+#### 1 Abstract
 
-  - Problem: To reduce their compute/memory requirements is to replace **dense weight matrices** with structured ones (e.g., sparse, low-rank, Fourier transform)
+- Problem: To reduce their compute/memory requirements is to replace **dense weight matrices** with structured ones (e.g., sparse, low-rank, Fourier transform)
 
-  - Challenge
+- Challenge
 
-    - In end-to-end training due to unfavorable **efficiency-quality tradeoffs**
+  - In end-to-end training due to unfavorable **efficiency-quality tradeoffs**
 
-    - In dense-to-sparse fine-tuning due to lack of **tractable algorithms** to approximate a given dense weight matrix
+  - In dense-to-sparse fine-tuning due to lack of **tractable algorithms** to approximate a given dense weight matrix
 
-  - **Monarch**: **hardware-efficient** (two block-diagonal matrices for better hardware utilization) + **expressive** (represent many commonly used transforms).
-    - New ways to train and fine-tune sparse and dense models
-    
-  - Result
+- **Monarch**: **hardware-efficient** (two block-diagonal matrices for better hardware utilization) + **expressive** (represent many commonly used transforms).
+  - New ways to train and fine-tune sparse and dense models
   
-    - End-to-End: ViT, MLP-Mixer, and GPT-2  #**2x** 
-  
-    - PDE solving and MRI reconstruction tasks: **error down #40%**
-  
-    - Sparse-to-Dense: GPT-2 #**2x**; BERT pretraining #**23%>** Nvidia MLPerf
-  
-    - Dense-to-Sparse: BERT finetuning #**1.7x**
-  
-- **1 Introduction**
+- Result
 
-  - Challenge:
+  - End-to-End: ViT, MLP-Mixer, and GPT-2  #**2x** 
 
-    - E2E: unfavorable efficiency-quality tradeoffs
+  - PDE solving and MRI reconstruction tasks: **error down #40%**
 
-      - Model quality: expressive ability of encoding domain-specific knowledge
+  - Sparse-to-Dense: GPT-2 #**2x**; BERT pretraining #**23%>** Nvidia MLPerf
 
-      <img src="Summarize.assets/image (8).png" alt="image (8)" width="60%" />
+  - Dense-to-Sparse: BERT finetuning #**1.7x**
 
-    - sparse training method: slow down training + x represent commonly used transforms
+#### 1 Introduction
 
-    - structured matrice: difficult to use in E2E training
+- Challenge:
 
-  - -> Monarch (bridge between dense and sparse)
+  - E2E: unfavorable efficiency-quality tradeoffs
 
-    - E2E: parameterized as products of two block-diagonal matrices (up to permutation)
+    - **Model quality**: expressive ability of encoding domain-specific knowledge
 
-      - optimized batch-matrix-multiply (BMM) routines on GPUs
+    <img src="Summarize.assets/image (8).png" alt="image (8)" width="60%" />
 
-    - S2D: reverse sparsification
+  - **Sparse training method**: slow down training + ✖ represent commonly used transforms
 
-      - sparse training ✖
+  - **Structured matrice**: difficult to use in E2E training
 
-      - fast intermediate representation to speed up the training process of the dense model.
+- -> **Monarch** (bridge between dense and sparse)
 
-    - D2S: fine-tuning
+  - E2E: Parameterized as products of two block-diagonal matrices (up to permutation)
 
-      - **Projection** problem: finding a matrix in a class of structured matrices that is the closest to a given dense matrix
+    - Optimized batch-matrix-multiply (BMM) routines on GPUs
 
-      - Author found a optimal projection algorithm for Monarch parameterization  (***Theorem 1:*** Given an n×n matrix $A$, there is an $O(n^{5/2})$-time algorithm that optimally $A= LR$.)
+  - S2D: reverse sparsification
 
-- **2 Related Work**
+    - Sparse training ✖
 
-  - butterfly matrices
+    - Fast intermediate representation to speed up the training process of the dense model.
 
-    - [https://dawn.cs.stanford.edu/2019/06/13/butterfly/](https://dawn.cs.stanford.edu/2019/06/13/butterfly/)
+  - D2S: fine-tuning
 
-    - encode the divide-and-conquer structure of many fast multiplication algorithms
+    - **Projection** problem: finding a matrix in a class of structured matrices that is the closest to a given dense matrix
 
-- **3 Monarch: Definition & Algorithms**
+    - Author found a optimal projection algorithm for Monarch parameterization  (***Theorem 1:*** Given an $n×n$ matrix $A$, there is an $O(n^{5/2})$-time algorithm that optimally $A= LR$.)
 
-  - 3.1 Monarch Parametrization for Square Matrices
+#### 2 Related Work
 
-    - Definition 3.1. Let $n = m^2$. An n × n Monarch matrix has the form:
+- Butterfly matrices
 
+  - [https://dawn.cs.stanford.edu/2019/06/13/butterfly/](https://dawn.cs.stanford.edu/2019/06/13/butterfly/)
+
+  - Encode the divide-and-conquer structure of many fast multiplication algorithms
+
+#### 3 Monarch: Definition & Algorithms
+
+- 3.1 Monarch Parametrization for Square Matrices
+
+  - Definition 3.1. Let $n = m^2$. An $n × n$ Monarch matrix has the form:
     - $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R}$
 
-    <img src="Summarize.assets/image (11).png" alt="image (11)" width="50%" />
 
-    - Monarch matrices $M$ = two block-diagonal matrices multiplication
+  <img src="Summarize.assets/image (11).png" alt="image (11)" width="50%" />
 
-    - Products of Monarch Matrices Class: $\mathcal{M} \mathcal{M}^*$ 
+  - Monarch matrices $M$ = two block-diagonal matrices multiplication
 
-    - $\left(\mathcal{M} \mathcal{M}^*\right)^2$ for $M_1,M_2 \in \mathcal{M} \mathcal{M}^*$
+  - Products of Monarch Matrices Class: $\mathcal{M} \mathcal{M}^*$ 
 
-    <img src="Summarize.assets/image (9).png" alt="image (9)" width="50%" />
+  - $\left(\mathcal{M} \mathcal{M}^*\right)^2$ for $M_1,M_2 \in \mathcal{M} \mathcal{M}^*$
 
-  - 3.2 Expressiveness and Efficiency
+  <img src="Summarize.assets/image (9).png" alt="image (9)" width="50%" />
 
-    - ***Proposition 3.2:*** The matrix class $\mathcal{M} \mathcal{M}^*$ can represent convolution, Hadamard transform, Toeplitz matrices, and AFDF matrices. The matrix class $(\mathcal{M} \mathcal{M}^*)^2$ can represent the Fourier transform, discrete sine and cosine transforms (DST/DCT), the $(HD)^3$ class, Fastfood, and ACDC matrices.
+- 3.2 Expressiveness and Efficiency
 
-    - ***Parameters：***Monarch matrix $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters. And total FLOPs is $O(n\sqrt{n}) > O(n\log n)$ (butterfly matrix). But easy to implement, 2x faster than dense multiply
+  - ***Proposition 3.2:*** The matrix class $\mathcal{M} \mathcal{M}^*$ can represent convolution, Hadamard transform, Toeplitz matrices, and AFDF matrices. The matrix class $(\mathcal{M} \mathcal{M}^*)^2$ can represent the Fourier transform, discrete sine and cosine transforms (DST/DCT), the $(HD)^3$ class, Fastfood, and ACDC matrices.
 
-    - 3.3 Projection on the Set M of Monarch Matrices
+  - ***Parameters:*** Monarch matrix $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters. Although total FLOPs is $O(n\sqrt{n}) > O(n\log n)$ (butterfly matrix), Monarch is easy to implement, **#2x** faster than dense multiply
 
-      - Dense Matrix -> Monarch
+- 3.3 Projection on the Set M of Monarch Matrices
 
-      - Given matrix $A$, find $\underset{\mathbf{M} \in \mathcal{M}}{\operatorname{argmin}}\|\mathbf{A}-\mathbf{M}\|_F^2$
+  - Dense Matrix -> Monarch
 
-      - ***Theorem 1: $A=LR \sim O(n^{5/2})$***
+  - Given matrix $A$, find $\underset{\mathbf{M} \in \mathcal{M}}{\operatorname{argmin}}\|\mathbf{A}-\mathbf{M}\|_F^2$
 
-      <img src="Summarize.assets/image (10).png" alt="image (10)" width="50%" />
+  - ***Theorem 1: $A=LR \sim O(n^{5/2})$***
 
-      - To convert a pretrained model into a model with Monarch weight matrices and speed up downstream fine-tuning
+  <img src="Summarize.assets/image (10).png" alt="image (10)" width="50%" />
 
-  - 3.4 Factorization of MM∗ Matrices
+  - To convert a pretrained model into a model with Monarch weight matrices and speed up downstream fine-tuning.
 
-    - Under mild assumptions, factorization to store and apply M efficiently
+- 3.4 Factorization of MM∗ Matrices
 
-- 5 Experiments
+  - Under mild assumptions, factorization to store and apply M efficiently
 
-  - 5.2 Sparse-to-Dense Training (reverse sparsification)
+#### 5 Experiments
 
-    - train a GPT-2 model with Monarch weight matrices for 90% of the training iterations, then relax the constraint on the weight matrices and train them as **dense matrices** for the remaining 10% of the iterations.
+- 5.2 Sparse-to-Dense Training (reverse sparsification)
+  - train a GPT-2 model with Monarch weight matrices for 90% of the training iterations, then relax the constraint on the weight matrices and train them as **dense matrices** for the remaining 10% of the iterations.
+  
+- 5.3 Dense-to-Sparse Fine-tuning
 
-  - 5.3 Dense-to-Sparse Fine-tuning
+#### 6 Conclusion
 
-- 6 Conclusion
+- By making **structured matrices practical**, our work is a first step towards unlocking tremendous performance improvements in applying sparse models to **wide-ranging ML applications** (including science and medicine)
 
-  - By making structured matrices practical, our work is a first step towards unlocking tremendous performance improvements in applying sparse models to wide-ranging ML applications (including science and medicine)
-
-  - Inspire more future work on advancing machine learning models for interdisciplinary research with limited computational resources
+- Inspire more future work on advancing machine learning models for interdisciplinary research with limited computational resources
 
 ----
 
 ### SLIDE : IN DEFENSE OF SMART ALGORITHMS OVER HARDWARE ACCELERATION FOR LARGE-SCALE DEEP LEARNING SYSTEMS
 
-  - Abstract
+#### Abstract
 
-    - It's hard to maintain **enough capacity to memorize many** parameters **and** obtain state-of-the-art accuracy **when training** large neural networks.
+- It's hard to maintain **enough capacity to memorize many** parameters **and** obtain state-of-the-art accuracy **when training** large neural networks.
 
-    - **Specialized hardware** for model training **is expensive** and hard to generalize**, compared to GPUs.**
+- **Specialized hardware** for model training **is expensive** and hard to generalize**, compared to GPUs.**
 
-    - This paper propose SLIDE (Sub-Linear Deep learning Engine) that uniquely blends **smart randomized algorithms**, with **multi-core parallelism and workload optimization**. 
+- This paper propose SLIDE (Sub-Linear Deep learning Engine) that uniquely blends **smart randomized algorithms**, with **multi-core parallelism and workload optimization**. 
 
-    - Performance
+- Performance
 
-      - 44 core CPU **=** **3.5*1** Tesla V100
+  - 44 core CPU **=** **3.5*1** Tesla V100
 
-      - **1** SLIDE **= 10x TF**
+  - **1** SLIDE **= 10x TF**
 
-  - 1 Intro
+#### 1 Intro
 
-    - the idea of **adaptive sparsity** or **adaptive dropouts**
+- the idea of **adaptive sparsity** or **adaptive dropouts**
 
-    - design a system that can effectively leverage the **computational advantage** and at the same time compensate for the **hash table overheads using limited (only a few cores) parallelisms**. 
+- design a system that can effectively leverage the **computational advantage** and at the same time compensate for the **hash table overheads using limited (only a few cores) parallelisms**. 
 
-    - Our Contributions
+- Our Contributions
 
-      - This unique possibility is because the **parallelism** in SLIDE is **naturally asynchronous** by design. We have our code and benchmark scripts for reproducibility.
+  - This unique possibility is because the **parallelism** in SLIDE is **naturally asynchronous** by design. We have our code and benchmark scripts for reproducibility.
 
-      - in designing the LSH based sparsification to minimize the computational overheads to a few **memory lookups** only (**truly O(1)**)
+  - in designing the LSH based sparsification to minimize the computational overheads to a few **memory lookups** only (**truly O(1)**)
 
-        - The implementation further takes advantage of the sparse gradient updates to achieve negligible update conflicts, which creates ideal settings for Asynchronous SGD
+    - The implementation further takes advantage of the sparse gradient updates to achieve negligible update conflicts, which creates ideal settings for Asynchronous SGD
 
-      - SLIDE is a memory-bound application
+  - SLIDE is a memory-bound application
 
-        - With careful workload and cache optimizations (eg. Transparent Hugepages) and a data access pattern (eg. SIMD instructions), we further speed up SLIDE by roughly 1.3x
+    - With careful workload and cache optimizations (eg. Transparent Hugepages) and a data access pattern (eg. SIMD instructions), we further speed up SLIDE by roughly 1.3x
 
-  - 2 LOCALITY SENSITIVE HASHING
+#### 2 LOCALITY SENSITIVE HASHING
 
-    <img src="Summarize.assets/image (3).png" alt="image (3)" width="100%" />
+<img src="Summarize.assets/image (3).png" alt="image (3)" width="100%" />
 
-      - **Initialization:**
+  - **Initialization:**
 
-      - **Sparse Feed-Forward Pass with Hash Table Sampling:**
+  - **Sparse Feed-Forward Pass with Hash Table Sampling:**
 
-        
+    
 
-    <img src="Summarize.assets/image (4).png" alt="image (4)" width="50%" />
+<img src="Summarize.assets/image (4).png" alt="image (4)" width="50%" />
 
-      - **Sparse Backpropagation or Gradient Update:**
+  - **Sparse Backpropagation or Gradient Update:**
 
-        - **Here we use the classical backpropagation message passing type implementation rather than vector multiplication based.**
+    - **Here we use the classical backpropagation message passing type implementation rather than vector multiplication based.**
 
-        - **take full advan-tage of sparsity.**
+    - **take full advan-tage of sparsity.**
 
-      - **Update Hash Tables after Weight Updates:**
+  - **Update Hash Tables after Weight Updates:**
 
-        - Updating neurons typically involves deletion from the old bucket followed by an addition to the new bucket, which can be expensive.
+    - Updating neurons typically involves deletion from the old bucket followed by an addition to the new bucket, which can be expensive.
 
-      - **OpenMP Parallelization across a Batch:**
+  - **OpenMP Parallelization across a Batch:**
 
-        - Each data instance in the batch runs in a separate thread and its gradients are computed in parallel.
+    - Each data instance in the batch runs in a separate thread and its gradients are computed in parallel.
 
-      - **The extreme sparsity and randomness in gradient updates allow us to asynchronously parallelize the accumulation step of the gradient across different training data without leading to a considerable amount of overlapping updates.**
+  - **The extreme sparsity and randomness in gradient updates allow us to asynchronously parallelize the accumulation step of the gradient across different training data without leading to a considerable amount of overlapping updates.**
 
-  - 4 REDUCING OVERHEAD
+#### 4 REDUCING OVERHEAD
 
-    - 4.2 Updating Overhead
+- 4.2 Updating Overhead
 
-      - Dynamically change the update frequency of hash tables to reduce the overhead.
+  - Dynamically change the update frequency of hash tables to reduce the overhead.
 
-        -  $N_0 e^{\lambda i}$
+    -  $N_0 e^{\lambda i}$
 
-      - The gradient updates in the initial stage of the training are larger than those in the later stage
+  - The gradient updates in the initial stage of the training are larger than those in the later stage
 
-      - Reservoir sampling algorithm
+  - Reservoir sampling algorithm
 
-  - 6 CONCLUSION AND FUTURE WORK
+#### 6 CONCLUSION AND FUTURE WORK
 
-    - Our system SLIDE is a combination of carefully tailored randomized hashing algorithms with the right data structures that allow asynchronous parallelism.
+- Our system SLIDE is a combination of carefully tailored randomized hashing algorithms with the right data structures that allow asynchronous parallelism.
 
-    - Our next steps are to extend SLIDE to include convolutional layers. 
+- Our next steps are to extend SLIDE to include convolutional layers. 
 
-    - SLIDE has unique benefits when it comes to **random memory accesses** and **parallelism**. We anticipate that a **distributed implementation** of SLIDE would be very appealing because the communication costs are minimal due to sparse gradients.
+- SLIDE has unique benefits when it comes to **random memory accesses** and **parallelism**. We anticipate that a **distributed implementation** of SLIDE would be very appealing because the communication costs are minimal due to sparse gradients.
 
 ----
 
 ### QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION
 
-- Abstract
+#### Abstract
 
-  - DNNs' success depends on many supporting libraries.
+- DNNs' success depends on many supporting libraries.
 
-  - QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
+- QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
 
-  - In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
+- In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
 
-  - **good accuracy** and computation consumption
+- **good accuracy** and computation consumption
 
-- 1 Intro
+#### 1 Intro
 
-  - the benefits of QDNNs stem from the unique characteristics of the second-order polynomial form: 
+- the benefits of QDNNs stem from the unique characteristics of the second-order polynomial form: 
 
-    - (1) **stronger non-linearity**, hence improved capability for feature extraction
+  - (1) **stronger non-linearity**, hence improved capability for feature extraction
 
-    - (2) **higher model efficiency** as QDNN can approximate polynomial decision boundaries using smaller network depth/width
+  - (2) **higher model efficiency** as QDNN can approximate polynomial decision boundaries using smaller network depth/width
 
-  - Contribution
+- Contribution
 
-    - four types of QDNN
+  - four types of QDNN
 
-    - new quadratic neuron architecture
+  - new quadratic neuron architecture
 
-    - QuadraLib
+  - QuadraLib
 
-    - experiment
+  - experiment
 
-- 2 DRAWBACKS OF THE EXISTING QDNN NEURON ARCHITECTURE DESIGN
+#### 2 DRAWBACKS OF THE EXISTING QDNN NEURON ARCHITECTURE DESIGN
 
-  - P1 Approximation Capability Issue:
+- P1 Approximation Capability Issue:
 
-  - P2 Computation Complexity Issue:
+- P2 Computation Complexity Issue:
 
-  - P3 Converge Performance Issue:
+- P3 Converge Performance Issue:
 
-    - second-order term in QDNNs will introduce critical gradient vanishing issue
+  - second-order term in QDNNs will introduce critical gradient vanishing issue
 
-  - P4 Implementation Feasibility Issue:
+- P4 Implementation Feasibility Issue:
 
-    - need to rewrite the entire convolution operation to add extra multiplication between W and the second X.
+  - need to rewrite the entire convolution operation to add extra multiplication between W and the second X.
 
-  - P5 Structure Design Issue:
+- P5 Structure Design Issue:
 
-  - P6 Memory Usage Issue:
+- P6 Memory Usage Issue:
 
 - 3 QDNN NEURON ARCHITECTURE OPTIMIZATION
 
@@ -309,10 +308,11 @@
 
 
 
+---
+
+## AI-Sys Sp22: Machine Learning Systems 
 
 
-
-## DB
 
 
 
