@@ -81,7 +81,7 @@
 
   - Products of Monarch Matrices Class: $\mathcal{M} \mathcal{M}^*$ 
 
-  - $$\left(\mathcal{M} \mathcal{M}^*\right)^2 \text{ for } M_1,M_2 \in \mathcal{M} \mathcal{M}^*$$
+  - $$ \left(\mathcal{M} \mathcal{M}^*\right)^2 \text{ for } M_1,M_2 \in \mathcal{M} \mathcal{M}^*$$ 
 
   <img src="Summarize.assets/image (9).png" alt="image (9)" width="50%" />
 
