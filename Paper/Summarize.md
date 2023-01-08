@@ -2,37 +2,36 @@
 
 ## MLsys
 
-## Monarch: Expressive Structured Matrices for Efficient and Accurate Training
+### Monarch: Expressive Structured Matrices for Efficient and Accurate Training
 
 - **1 Abstract**
 
-  - A popular approach to reduce their compute/memory requirements is to replace dense weight matrices with structured ones (e.g., sparse, low-rank, Fourier transform)
+  - Problem: To reduce their compute/memory requirements is to replace **dense weight matrices** with structured ones (e.g., sparse, low-rank, Fourier transform)
 
   - Challenge
 
-    - in end-to-end training due to unfavorable efficiency-quality tradeoffs
+    - In end-to-end training due to unfavorable **efficiency-quality tradeoffs**
 
-    - in dense-to-sparse fine-tuning due to lack of tractable algorithms to approximate a given dense weight matrix
+    - In dense-to-sparse fine-tuning due to lack of **tractable algorithms** to approximate a given dense weight matrix
 
-  - Monarch: hardware-efficient ( two block-diagonal matrices for better hardware utilization) + expressive (represent many commonly used transforms).
-
-    - new ways to train and fine-tune sparse and dense models
-
+  - **Monarch**: **hardware-efficient** (two block-diagonal matrices for better hardware utilization) + **expressive** (represent many commonly used transforms).
+    - New ways to train and fine-tune sparse and dense models
+    
   - Result
-
+  
     - End-to-End: ViT, MLP-Mixer, and GPT-2  #**2x** 
-
+  
     - PDE solving and MRI reconstruction tasks: **error down #40%**
-
-    - Sparse-to-Dense: GPT-2 #**2x**; BERT pretraining #**23%>** Nividia MLPerf
-
+  
+    - Sparse-to-Dense: GPT-2 #**2x**; BERT pretraining #**23%>** Nvidia MLPerf
+  
     - Dense-to-Sparse: BERT finetuning #**1.7x**
-
+  
 - **1 Introduction**
 
   - Challenge:
 
-    - E2E: unfavorable efficiency–quality tradeoffs
+    - E2E: unfavorable efficiency-quality tradeoffs
 
       - Model quality: expressive ability of encoding domain-specific knowledge
 
@@ -273,7 +272,7 @@
   - 3.2 Theoretical Performance Analysis
 
     - Extra Weights and Linear Term for Approximation Capa-
-bility (P1) Improvement:
+  bility (P1) Improvement:
 
     - Hadamard Product for Computation Complexity (P2) Optimization:
 
