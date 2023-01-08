@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yiran Ding (丁羿然)"
-description              : "Here is Yiran Ding's website."
+description              : "You can call me "E-Ray Ding"."
 repository               : "Yiyi-philosophy/yiran.ding"
 google_scholar_stats_use_cdn : false
 
@@ -21,7 +21,7 @@ baidu_site_verification  :
 
 # Site Author
 author:
-  name             : "Yiran Ding"
+  name             : "Yiran Ding(丁羿然)"
   avatar           : "images/DYR512.jpg"
   bio              : "HDU"
   location         : "Hangzhou, China"

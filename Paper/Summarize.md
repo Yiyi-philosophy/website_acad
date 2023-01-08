@@ -334,6 +334,11 @@
   - random access to the input samples has been in fact identified as one of the major contributors to poor I/O performance
 - Contribution
   - revisit data shuffling strategies when scaling deep learning applications to a large number of workers.
+  - implement a dataset partitioning, shuffling, and redistribution solution for distributed training
+  - local shuffling achieves accuracy $\approx$ the default global shuffling strategy !!!
+    - Average store #0.03% dataset
+  - local shuffling #5x < global shuffling
+  - 
 
 #### 2 BACKGROUND AND MOTIVATION
 
