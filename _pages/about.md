@@ -10,6 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). 
+
 I'm preparing for the **24 fall** applications of CS PhD.
 
 #### And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
@@ -56,8 +57,23 @@ I'm preparing for the **24 fall** applications of CS PhD.
 	} 
 	return C
 	```
-
 </div></div>
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div>
+	<img src="about.assets/image-20230109232006051.png" alt="image-20230109232006051" width="100%" />
+</div></div>
+
+<div class='paper-box-text' markdown="1">
+*Feb. 17-21 2022*: Mathematical Modeling: MCM/ICM 2022 E 
+- Led the project of "Forestry for Carbon Sequestration to Forest Management".
+- Developed logistic equation based model to estimate the carbon sequestration of different trees species. (Successful Participant)
+- Drawn 20 image in the article, using MATLAB and PPT.
+- Utilized: Least Squares method, Monte Carlo method.
+<img src="about.assets/image-20230109232046462.png" alt="image-20230109232046462" width="100%" />
+</div></div>
+
 
 # 📝 Publications 
 
@@ -79,13 +95,13 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 💻 Online Courses
 
-- UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26)
-- UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11)
+- UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://github.com/Yiyi-philosophy/CS267_note/blob/main/CS267 Note.md)
+- UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11) 
 - CMU 15-213: Intro to Computer Systems (CSAPP),
 - MIT 6.s081: Operating System Engineering
 - THU: Data Structures
-- Hung-yi Lee: Machine learning 2021
-- Andrew Ng: Machine learning
+- Hung-yi Lee: Machine learning 2021 [My note](https://github.com/Yiyi-philosophy/LHY_ML)
+- Andrew Ng: Machine learning  
 - MIT 18.06: Linear Algebra
 
 # 📰 Summarize for some Papers
