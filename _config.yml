@@ -23,7 +23,7 @@ baidu_site_verification  :
 author:
   name             : "Yiran Ding (丁羿然)"
   avatar           : "images/DYR512.jpg"
-  bio              : "You can call me Eray Ding."
+  bio              : 'My name is pronounced like "Eray Ding".'
   location         : "Hangzhou, China"
   employer         :
   pubmed           : 
