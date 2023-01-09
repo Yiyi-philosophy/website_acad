@@ -109,6 +109,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Using the classical backpropagation **message passing** type implementation rather than vector multiplication based and taking full advantage of sparsity.
 - The extreme sparsity and randomness in gradient updates allow us to asynchronously parallelize the accumulation step of the gradient across different training data without leading to a considerable amount of overlapping updates.
 
+
+
 [QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#quadralib-a-performant-quadratic-neural-network-library-for-architecture-optimization-and-design-exploration)
 - DNNs' success depends on many supporting libraries.
 - QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
@@ -119,6 +121,21 @@ I'm preparing for the **24 fall** applications of CS PhD.
   - Hadamard Product for Computation Complexity Optimization
   - Linear Term for Converge Performance Enhancement
   - First-order Neuron Combination for Implementation Feasibility Improvement
+
+---
+
+## ML 
+
+[Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#why-globally-re-shuffle-revisiting-data-shuffling-in-large-scale-deep-learning)
+
+- **Random access** to the input samples has been in fact identified as one of the major contributors to **poor I/O performance**.
+
+- Investigate the viability of partitioning the dataset among workers performing only a **partial distributed exchange** of samples in each training epoch.
+- Demonstrate that in practice validation accuracy of **global shuffling** exchange $\approx$ partial distributed exchange when carefully tuning.
+  - Each worker store **#0.03%** datasets.
+  - **Training time**: Local shuffling **#5x** < Global shuffling
+
+
 
 # 📖 Educations
 

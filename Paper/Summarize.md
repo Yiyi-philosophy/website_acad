@@ -324,7 +324,7 @@
   - In HPC environments, we often replicate the entire dataset to node local SSDs.
 - Contribution
   - Investigate the viability of partitioning the dataset among workers performing only a **partial distributed exchange** of samples in each training epoch.
-  - Demonstrate that in practice validation accuracy of global shuffling partial distributed exchange $\approx$ partial distributed exchange when carefully tuning.
+  - Demonstrate that in practice validation accuracy of global shuffling exchange $\approx$ partial distributed exchange when carefully tuning.
 
 
 #### 1 INTRODUCTION
