@@ -390,9 +390,9 @@
   - while local shuffling starts to **converge slower** than its global counterpart, local partial shuffling provides almost identical accuracy trajectory with global sampling, which in turn with a feasible learning rate schedule could lead to **faster overall convergence** and thus a reduction in runtime.
   - On some larger datasets, **local shuffling accuracy == global shuffling**
     - Indicates that workers **do not** actually need to process a large portion of the whole dataset, and exchanging the gradient weights is **enough** to ensure convergence.
-  - <img src="Summarize.assets/image-20230109155659742.png" alt="image-20230109155659742" width="80%;" />
+  - <img src="Summarize.assets/image-20230109155659742.png" alt="image-20230109155659742" width="40%;" />
   - Since global shuffling reads from the PFS, the cost of I/O is much higher than those of local and partial shuffling.
-    - <img src="Summarize.assets/image-20230109160514415.png" alt="image-20230109160514415" width="80%;" />
+    - <img src="Summarize.assets/image-20230109160514415.png" alt="image-20230109160514415" width="40%;" />
     - Partial-1.0 is same as Global ? Without Scheduler?
 
 #### 6 RELATED WORK
