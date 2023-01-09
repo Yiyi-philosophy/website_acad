@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yiran Ding(丁羿然)"
+title                    : "Yiran Ding (丁羿然)"
 description              : "A will find a way."
 repository               : "Yiyi-philosophy/yiran.ding"
 google_scholar_stats_use_cdn : false
@@ -21,9 +21,9 @@ baidu_site_verification  :
 
 # Site Author
 author:
-  name             : "Yiran Ding(丁羿然)"
+  name             : "Yiran Ding (丁羿然)"
   avatar           : "images/DYR512.jpg"
-  bio              : "You can call me "E-Ray Ding"."
+  bio              : "You can call me Eray Ding."
   location         : "Hangzhou, China"
   employer         :
   pubmed           : 
