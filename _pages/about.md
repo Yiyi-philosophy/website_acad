@@ -66,7 +66,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 <div class='paper-box-text' markdown="1">
-*Feb. 17-21 2022*: Mathematical Modeling: MCM/ICM 2022 [Problem E](https://mathmodels.org/Problems/2022/ICM-E/2022_ICM_Problem_E.pdf) 
+*Feb. 17-21 2022*: Mathematical Modeling: MCM/ICM 2022 [Problem E](https://mathmodels.org/Problems/2022/ICM-E/2022_ICM_Problem_E.pdf) [Our article]()
 - Led the project of "Forestry for Carbon Sequestration to Forest Management".
 - Developed logistic equation based model to estimate the carbon sequestration of different trees species. (Successful Participant)
 - Drawn 20 image in the article, using MATLAB and PPT.
