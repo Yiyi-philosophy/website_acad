@@ -375,9 +375,7 @@
 
   - for insufficient global shuffling in the non-convex case, the convergence rate’s upper bound include three terms
 
-  - $$
-    O\left(\sqrt{\frac{1}{S|N|}}+\frac{\log |N|}{|N|}+\frac{|N| \epsilon(A, N)^2}{b|M|}\right)
-    $$
+  - $$O\left(\sqrt{\frac{1}{S|N|}}+\frac{\log |N|}{|N|}+\frac{|N| \epsilon(A, N)^2}{b|M|}\right)$$
 
     -  $S$ is the number of epochs, and $\epsilon(A, N)$ is the shuffling error of algorithm $A$ with the samples $N$
     -  And shuffling error can be simplified: $\epsilon(A, h, N)=1-\frac{\sigma}{|N| !}$
@@ -393,7 +391,6 @@
     - <img src="Summarize.assets/image-20230109155659742.png" alt="image-20230109155659742" width="40%;" />
   - Since global shuffling reads from the PFS, the cost of I/O is much higher than those of local and partial shuffling.
     - <img src="Summarize.assets/image-20230109160514415.png" alt="image-20230109160514415" width="40%;" />
-    - Partial-1.0 is same as Global ? Without Scheduler?
 
 #### 6 RELATED WORK
 
