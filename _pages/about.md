@@ -62,7 +62,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 <div class='paper-box'><div class='paper-box-image'><div>
-	<img src="_pages/about.assets/image-20230109232006051.png" alt="image-20230109232006051" width="80%" />
+	<img src="_pages/about.assets/image-20230109232006051.png" alt="image-20230109232006051" width="80%" text-align:"center"/>
 </div></div>
 
 <div class='paper-box-text' markdown="1">
