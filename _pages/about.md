@@ -9,11 +9,13 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
-Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). 
+Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). You can visit [My Blog](https://yiyi-philosophy.github.io/yiran.ding/) to know more about me.
 
 I'm preparing for the **24 fall** applications of CS PhD.
 
 #### And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
+
+
 
 ## Research Interests:
 
@@ -95,7 +97,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 💻 Online Courses
 
-- UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://github.com/Yiyi-philosophy/CS267_note/blob/main/CS267 Note.md)
+- UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://yiyi-philosophy.github.io/simplicity/Note_CS267/)
 - UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11) 
 - CMU 15-213: Intro to Computer Systems (CSAPP),
 - MIT 6.s081: Operating System Engineering
@@ -108,7 +110,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 ## MLsys
 
-[Monarch: Expressive Structured Matrices for Efficient and Accurate Training](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#monarch-expressive-structured-matrices-for-efficient-and-accurate-training)
+[Monarch: Expressive Structured Matrices for Efficient and Accurate Training](https://yiyi-philosophy.github.io/simplicity/Monarch/)
 
 - This paper propose a form of matrix **Monarch** which is **hardware-efficient** and **expressive**. 
   - **Efficient** -> Monarch matrix: $\mathbf{M}=\mathbf{P L P}^{\top} \mathbf{R} \sim 2n\sqrt{n}$  parameters
@@ -119,7 +121,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
     - $\mathbf{M}=\mathbf{(P L_1 P^{\top})} \mathbf{R (P L_2 P^{\top})} \sim O(n^{5/2})$ 
 - This method can be use in End-to-End training #**2x** , PDE solving and MRI reconstruction tasks **error #-40%**, Sparse-to-Dense (GPT-2 #**2x**; BERT pretraining #**23%>** Nvidia MLPerf) and Dense-to-Sparse BERT finetuning #**1.7x**.
 
-[Slide : In Defense Of Smart Algorithms Over Hardware Acceleration For Large-Scale Deep Learning Systems](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#slide--in-defense-of-smart-algorithms-over-hardware-acceleration-for-large-scale-deep-learning-systems)
+[Slide : In Defense Of Smart Algorithms Over Hardware Acceleration For Large-Scale Deep Learning Systems](https://yiyi-philosophy.github.io/simplicity/Slide/)
 
 - This paper propose SLIDE (Sub-Linear Deep learning Engine) that uniquely blends smart randomized algorithms, with **multi-core parallelism** and workload optimization.
 - Using the classical backpropagation **message passing** type implementation rather than vector multiplication based and taking full advantage of sparsity.
@@ -127,7 +129,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 
-[QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#quadralib-a-performant-quadratic-neural-network-library-for-architecture-optimization-and-design-exploration)
+[QUADRALIB: A PERFORMANT QUADRATIC NEURAL NETWORK LIBRARY FOR ARCHITECTURE OPTIMIZATION AND DESIGN EXPLORATION](https://yiyi-philosophy.github.io/simplicity/QuadraLib/)
+
 - DNNs' success depends on many supporting libraries.
 - QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
 - In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
@@ -142,7 +145,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 ## ML 
 
-[Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/Paper/Summarize.md#why-globally-re-shuffle-revisiting-data-shuffling-in-large-scale-deep-learning)
+[Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning](https://yiyi-philosophy.github.io/simplicity/Local-Shuffle/)
 
 - **Random access** to the input samples has been in fact identified as one of the major contributors to **poor I/O performance**.
 
