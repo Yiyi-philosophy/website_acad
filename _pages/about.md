@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
-Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). You can visit [My Blog](https://yiyi-philosophy.github.io/yiran.ding/) to know more about me.
+Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). You can visit [My Blog](https://yiyi-philosophy.github.io/sim/) to know more about me.
 
 I'm preparing for the **24 fall** applications of CS PhD.
 
