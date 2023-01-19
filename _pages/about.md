@@ -108,6 +108,16 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 📰 Summarize for some Papers
 
+## Sys
+
+[Demystifying and Checking Silent Semantic Violations in Large Distributed Systems](Demystifying and Checking Silent Semantic Violations in Large Distributed Systems)
+
+- A vexing problem occurs when a system is operational but **silently** breaks its semantics without **apparent anomalies**.
+- The silent violated semantics have these features: Early existence, Locally,  Difficult to detect, Easy convert to crash failures by assertions, vulnerable to violations when maintaining.
+- Oathkeeper, a tool that automatically infers semantic rules from p**ast failures** and enforces the rules at runtime to detect new failures. And Oathkeeper runs the tests on both the buggy version and patched version of the system, and takes a **template-driven** approach to automatically infer semantic rules from the two traces. Besides, Oathkeeper only incurs 1.27% throughput overhead.
+
+---
+
 ## MLsys
 
 [Monarch: Expressive Structured Matrices for Efficient and Accurate Training](https://yiyi-philosophy.github.io/simplicity/Monarch/)
@@ -159,10 +169,6 @@ I'm preparing for the **24 fall** applications of CS PhD.
 ## RL
 
 
-
----
-
-## Sys
 
 
 
