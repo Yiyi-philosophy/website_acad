@@ -99,8 +99,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 - UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://yiyi-philosophy.github.io/simplicity/Note_CS267/)
 - UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11) 
-- CMU 15-213: Intro to Computer Systems (CSAPP),
-- MIT 6.s081: Operating System Engineering
+- MIT 6.s081: Operating System Engineering (Ongoing 11/23) 
+- CMU 15-213: Intro to Computer Systems (CSAPP)
 - THU: Data Structures
 - Hung-yi Lee: Machine learning 2021 [My note](https://github.com/Yiyi-philosophy/LHY_ML)
 - Andrew Ng: Machine learning  
@@ -153,6 +153,18 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Demonstrate that in practice validation accuracy of **global shuffling** exchange $\approx$ partial distributed exchange when carefully tuning.
   - Each worker store **#0.03%** datasets.
   - **Training time**: Local shuffling **#5x** < Global shuffling
+
+---
+
+## RL
+
+
+
+---
+
+## Sys
+
+
 
 
 
