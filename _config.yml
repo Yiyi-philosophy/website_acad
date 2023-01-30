@@ -30,7 +30,8 @@ author:
   googlescholar    : # "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "yiran.ding2@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://yiyi-philosophy.github.io/simplicity/"
+  CV               : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -57,7 +58,6 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
 
 # Reading Files
 include:
