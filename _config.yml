@@ -12,7 +12,7 @@ repository               : "Yiyi-philosophy/yiran.ding"
 google_scholar_stats_use_cdn : false
 
 # google analytics
-google_analytics_id      : "G-NS9WJ7ZW1S"
+google_analytics_id      : G-NS9WJ7ZW1S
 
 # SEO Related
 google_site_verification : 
@@ -31,7 +31,7 @@ author:
   email            : "yiran.ding2@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : "https://yiyi-philosophy.github.io/simplicity/"
-  CV               : "https://github.com/Yiyi-philosophy/yiran.ding/blob/main/_pages/DYR_CV.pdf"
+  CV               : "images/DYR_CV.pdf"
   bitbucket        :
   codepen          :
   dribbble         :
