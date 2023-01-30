@@ -19,9 +19,9 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 ## Research Interests:
 
-- MLsys (Machine Learning System)
-- HPC (High Performance Computing)
+- MLsys
 - Distributed, Parallel, and Cluster Computing
+- HPC
 - Computer Architecture
 - Machine Learning
 - Computer Vision
