@@ -43,7 +43,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 <div class='paper-box-text' markdown="1">
-*July. 2022 - Sept. 2022*: **DGEMM**: Double Precision General Matrix Multiplication [Report](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/_pages/about.assets/Matrix%20Multiplication_v2.2.pdf)
+*July. 2022 - Sept. 2022*: **DGEMM**: Double Precision General Matrix Multiplication [Report](https://yiyi-philosophy.github.io/yiran.ding/_pages/about.assets/Matrix%20Multiplication_v2.2.pdf)
 - Using 9 ways to achieve Matrix Multiplication, including methods of **Cache-oblivious** (Recursive) and **Z-Morton**.
 - Testing Matrix size is from 16 to 2048, the best function is **82% faster** than standard function.
 - Pseudo-code for recursive methods
@@ -68,7 +68,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 <div class='paper-box-text' markdown="1">
-*Feb. 17-21 2022*: Mathematical Modeling: MCM/ICM 2022 [Problem E](https://mathmodels.org/Problems/2022/ICM-E/2022_ICM_Problem_E.pdf) [Our article](https://github.com/Yiyi-philosophy/yiran.ding/blob/main/_pages/about.assets/E-2224327.pdf)
+*Feb. 17-21 2022*: Mathematical Modeling: MCM/ICM 2022 [Problem E](https://mathmodels.org/Problems/2022/ICM-E/2022_ICM_Problem_E.pdf) [Our article](https://yiyi-philosophy.github.io/yiran.ding/_pages/about.assets/E-2224327.pdf)
 - Led the project of "Forestry for Carbon Sequestration to Forest Management".
 - Developed logistic equation based model to estimate the carbon sequestration of different trees species. (Successful Participant)
 - Drawn 20 image in the article, using MATLAB and PPT.
