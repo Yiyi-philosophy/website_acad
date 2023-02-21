@@ -143,7 +143,6 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 - DNNs' success depends on many supporting libraries.
 - QDNNs ($(WX)^2+b$) show better **non-linearity** and **learning capability**
-- In this paper, author proposed a new QDNN neuron architecture design, and further developed QuadraLib. 
 - The benefits of QDNNs: Stronger non-linearity, Higher model efficiency.
 - New Neuron Architecture Design
   - Extra Weights and Linear Term for Approximation Capability Improvement
@@ -154,12 +153,13 @@ I'm preparing for the **24 fall** applications of CS PhD.
 ---
 
 ## ML 
+[A Medium-Grained Algorithm for Distributed Sparse Tensor Factorization](https://yiyi-philosophy.github.io/simplicity/splatt/)
+
+- Present a medium-grained decomposition that avoids complete factor replication and communication, while eliminating the need for expensive pre-processing steps
 
 [Why Globally Re-shuffle? Revisiting Data Shuffling in Large Scale Deep Learning](https://yiyi-philosophy.github.io/simplicity/Local-Shuffle/)
 
 - **Random access** to the input samples has been in fact identified as one of the major contributors to **poor I/O performance**.
-
-- Investigate the viability of partitioning the dataset among workers performing only a **partial distributed exchange** of samples in each training epoch.
 - Demonstrate that in practice validation accuracy of **global shuffling** exchange $\approx$ partial distributed exchange when carefully tuning.
   - Each worker store **#0.03%** datasets.
   - **Training time**: Local shuffling **#5x** < Global shuffling
