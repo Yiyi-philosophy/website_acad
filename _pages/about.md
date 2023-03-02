@@ -114,11 +114,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 💻 Class
 
-
-
-
-<div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-2col'>
+<div class='paper-box-2col-left' markdown="1">
 ## Online Courses
 - UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://yiyi-philosophy.github.io/simplicity/Note_CS267/)
 - UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11) 
@@ -129,7 +126,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Andrew Ng: Machine learning  
 - MIT 18.06: Linear Algebra
 </div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-2col-right' markdown="1">
 ## College Courses
 ### Math and Science
 - Higher Mathematics(Calculus) A1						98

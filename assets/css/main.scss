@@ -93,7 +93,7 @@
 .paper-box-2col {
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: start;
     flex-direction: row;
     flex-wrap: wrap;
     //border-bottom: 1px #efefef solid;
@@ -101,12 +101,13 @@
     
     .paper-box-2col-left {
         text-align: left;
-        max-width: 40%;
+        //max-width: 40%;
+        width: 33.3%;
         order: 1;
     }
     .paper-box-2col-right {
         text-align: left;
-        max-width: 100%;
+        //max-width: 100%;
         order: 1;
     }
     
