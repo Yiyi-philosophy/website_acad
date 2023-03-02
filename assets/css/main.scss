@@ -88,6 +88,34 @@
 
 
 }
+
+.paper-box-2col {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
+    
+    .paper-box-2col-text{
+        max-width: 100%;
+        order: 1;
+    }
+    
+    @include breakpoint($medium) {
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
 // three colomn
 .box {
     display: flex;
