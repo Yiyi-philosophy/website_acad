@@ -93,10 +93,10 @@
 .paper-box-2col {
     display: flex;
     justify-content: left;
-    align-items: start;
+    align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
-    //border-bottom: 1px #efefef solid;
+    border-bottom: 1px #efefef solid;
     //padding: 2em 0 2em 0;
     
     .paper-box-2col-left {
