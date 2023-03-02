@@ -15,20 +15,6 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 #### And my latest GPA is 3.8/4.0(90/100) 5%.
 
-## Research Interests:
-- MLsys
-- Distributed, Parallel, and Cluster Computing
-- HPC
-- Computer Architecture
-- Machine Learning
-- Computer Vision
-
-## Skills:
-- C, C++, Python, Matlab
-- OpenMP, MPI, CUDA
-- Linux
-- Verilog
-
 <div class='paper-box-2col'>
 <div class='paper-box-2col-left' markdown="1">
 ## Research Interests:
@@ -129,14 +115,14 @@ I'm preparing for the **24 fall** applications of CS PhD.
 <div class='paper-box-2col-right' markdown="1">
 ## College Courses
 ### Math and Science
-- Higher Mathematics(Calculus) A1						98
-- Higher Mathematics(Calculus) A2						96
-- Analytic Geometry 									90
-- Probability Theory and Mathematical Statistics		91
-- Complex Analysis										96
-- Methods and Applications of Mathematical Modeling (A)	90
-- Mathematical Modeling Foundation(A)					93
-- Electromagnetic Field and Electromagnetic Wave 		98
+- Higher Mathematics(Calculus) A1 --------------------- 98
+- Higher Mathematics(Calculus) A2 --------------------- 96
+- Analytic Geometry ----------------------------------- 90
+- Probability Theory and Mathematical Statistics ------ 91
+- Complex Analysis ------------------------------------ 96
+- Methods and Applications of Mathematical Modeling(A)- 90
+- Mathematical Modeling Foundation(A) ----------------- 93
+- Electromagnetic Field and Electromagnetic Wave ------ 98
 </div>
 </div>
 
