@@ -92,7 +92,8 @@
 
 .paper-box-2col {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    //space-between;
     align-items: stretch;
     flex-direction: row;
     flex-wrap: wrap;
