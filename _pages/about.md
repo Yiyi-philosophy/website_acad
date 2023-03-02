@@ -17,7 +17,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 <div class='paper-box'>
-	<div class='paper-box-text' markdown="1" align="left">
+	<div class='paper-box-text' markdown="1">
+	<div align="left">
 	## Research Interests:
 	- MLsys
 	- Distributed, Parallel, and Cluster Computing
@@ -25,14 +26,17 @@ I'm preparing for the **24 fall** applications of CS PhD.
 	- Computer Architecture
 	- Machine Learning
 	- Computer Vision
+    </div>
 	</div>
 
-  	<div class='paper-box-text' markdown="1" align="left">
+  	<div class='paper-box-text' markdown="1">
+	<div align="left">
 	## Skills:
 	- C, C++, Python, Matlab
 	- OpenMP, MPI, CUDA
 	- Linux
 	- Verilog
+	</div>
 	</div>
 
 </div>
