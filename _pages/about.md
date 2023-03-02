@@ -13,7 +13,7 @@ Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi Un
 
 I'm preparing for the **24 fall** applications of CS PhD.
 
-#### And my latest GPA is 3.73/4.0(4.37/5.0) 5%.
+#### And my latest GPA is 3.8/4.0(90/100) 5%.
 
 ## Research Interests:
 - MLsys
@@ -22,11 +22,29 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Computer Architecture
 - Machine Learning
 - Computer Vision
+
 ## Skills:
 - C, C++, Python, Matlab
 - OpenMP, MPI, CUDA
 - Linux
 - Verilog
+
+<div class='paper-box'>
+<div class='paper-box-text' markdown="1">
+## Skills:
+- C, C++, Python, Matlab
+- OpenMP, MPI, CUDA
+- Linux
+- Verilog
+</div>
+<div class='paper-box-text' markdown="1">
+## Skills:
+- C, C++, Python, Matlab
+- OpenMP, MPI, CUDA
+- Linux
+- Verilog
+</div>
+</div>
 
 
 # 🔥 Recent Task
@@ -92,7 +110,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 
-# 💻 Online Courses
+# 💻 Class
+## Online Courses
 
 - UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://yiyi-philosophy.github.io/simplicity/Note_CS267/)
 - UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11) 
@@ -102,6 +121,17 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Hung-yi Lee: Machine learning 2021 [My note](https://github.com/Yiyi-philosophy/LHY_ML)
 - Andrew Ng: Machine learning  
 - MIT 18.06: Linear Algebra
+
+## College Courses
+### Math and Science
+- Higher Mathematics(Calculus) A1						98
+- Higher Mathematics(Calculus) A2						96
+- Analytic Geometry 									90
+- Probability Theory and Mathematical Statistics		91
+- Complex Analysis										96
+- Methods and Applications of Mathematical Modeling (A)	90
+- Mathematical Modeling Foundation(A)					93
+- Electromagnetic Field and Electromagnetic Wave 		98
 
 # 📰 Summarize for some Papers
 
