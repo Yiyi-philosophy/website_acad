@@ -90,24 +90,19 @@
 }
 // three colomn
 .box {
-    position: relative;
-  .left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 300px;
-    // background-color: gray;
+    display: flex;
   }
-  .right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 400px;
-    height: 300px;
-    // background-color: gray;
+  .left{
+    width: 33.3%;
+    height: 100px;
+    // background-color: skyblue;
   }
-}
+  .right{
+    flex: 1;
+    height: 100px;
+    // background-color: pink;
+  }
+
 
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
