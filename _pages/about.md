@@ -31,11 +31,13 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 <div class='paper-box'>
 <div class='paper-box-text' markdown="1">
-## Skills:
-- C, C++, Python, Matlab
-- OpenMP, MPI, CUDA
-- Linux
-- Verilog
+## Research Interests:
+- MLsys
+- Distributed, Parallel, and Cluster Computing
+- HPC
+- Computer Architecture
+- Machine Learning
+- Computer Vision
 </div>
 <div class='paper-box-text' markdown="1">
 ## Skills:
@@ -111,8 +113,13 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 # 💻 Class
-## Online Courses
 
+
+
+
+<div class='paper-box'>
+<div class='paper-box-text' markdown="1">
+## Online Courses
 - UC Berkeley CS267: Applications of Parallel Computers (Ongoing 17/26) [My note](https://yiyi-philosophy.github.io/simplicity/Note_CS267/)
 - UC Berkeley AI-Sys: Machine Learning Systems (Ongoing 3/11) 
 - MIT 6.s081: Operating System Engineering (Ongoing 11/23) 
@@ -121,7 +128,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Hung-yi Lee: Machine learning 2021 [My note](https://github.com/Yiyi-philosophy/LHY_ML)
 - Andrew Ng: Machine learning  
 - MIT 18.06: Linear Algebra
-
+</div>
+<div class='paper-box-text' markdown="1">
 ## College Courses
 ### Math and Science
 - Higher Mathematics(Calculus) A1						98
@@ -132,6 +140,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Methods and Applications of Mathematical Modeling (A)	90
 - Mathematical Modeling Foundation(A)					93
 - Electromagnetic Field and Electromagnetic Wave 		98
+</div>
+</div>
 
 # 📰 Summarize for some Papers
 
