@@ -95,13 +95,14 @@
     height: 300px;
   }
   .left{
-    float: left;
-    //background-color: skyblue;
+    width: 33.3%;
+    // background-color: skyblue; 
   }
   .right{
-    overflow: hidden;
+    flex: 1;    
     //background-color: pink;
   }
+
 }
 
 $scroll_offset : 2em;
