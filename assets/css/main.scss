@@ -88,6 +88,32 @@
 
 
 }
+// three colomn
+.box {
+    position: relative;
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+  }
+  .middle {
+    margin-left: 210px;
+    margin-right: 210px;
+    background-color: lightgray;
+    height: 200px;
+  }
+}
 
 $scroll_offset : 2em;
 h1:before, .anchor:before { 

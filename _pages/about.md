@@ -26,25 +26,12 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Machine Learning
 - Computer Vision
 
-<div class='paper-box'>
-<div class='paper-box-text' markdown="1">
-## Research Interests:
+<div class="box">
+  <div class="left">左边a</div>
+  <div class="middle">中间a</div>
+  <div class="right">右d边</div>
+</div>
 
-- MLsys
-- Distributed, Parallel, and Cluster Computing
-- HPC
-- Computer Architecture
-- Machine Learning
-- Computer Vision
-</div>
-<div class='paper-box-text' markdown="1">
-## Skills:
-- C, C++, Python, Matlab
-- OpenMP, MPI, CUDA
-- Linux
-- Verilog
-</div>
-</div>
 
 ## Skills:
 - C, C++, Python, Matlab
