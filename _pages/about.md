@@ -17,8 +17,11 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 
-## Research Interests:
 
+<div class="box">
+  <div class="left">
+
+## Research Interests:
 - MLsys
 - Distributed, Parallel, and Cluster Computing
 - HPC
@@ -26,18 +29,17 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Machine Learning
 - Computer Vision
 
-<div class="box">
-  <div class="left">左边a</div>
-  <div class="middle">中间a</div>
-  <div class="right">右d边</div>
-</div>
-
-
+  </div>
+  <!-- <div class="middle">中间a</div> -->
+  <div class="right">
 ## Skills:
 - C, C++, Python, Matlab
 - OpenMP, MPI, CUDA
 - Linux
 - Verilog
+  </div>
+</div>
+
 
 # 🔥 Recent Task
 
