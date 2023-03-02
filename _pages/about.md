@@ -18,9 +18,9 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 <div class='paper-box'>
+<div class='paper-box-text' markdown="1">
 <div class="box">
   	<div class="left">
-		<!-- <div class='paper-box-text' markdown="1"> -->
 		## Research Interests:
 		- MLsys
 		- Distributed, Parallel, and Cluster Computing
@@ -40,6 +40,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 		- Verilog
   		<!-- </div> -->
   	</div>
+</div>
 </div>
 </div>
 
