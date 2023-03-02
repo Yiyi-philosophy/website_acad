@@ -61,7 +61,6 @@ I'm preparing for the **24 fall** applications of CS PhD.
 	- Linux
 	- Verilog
 	</div>
-  	</div>
 
 </div>
 
