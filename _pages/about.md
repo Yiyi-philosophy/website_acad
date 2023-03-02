@@ -26,31 +26,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 	- OpenMP, MPI, CUDA
 	- Linux
 	- Verilog
-<!-- 
-<div class='paper-box'>
-	<div class='paper-box-text' markdown="1">
-	<div align="left">
-	## Research Interests:
-	- MLsys
-	- Distributed, Parallel, and Cluster Computing
-	- HPC
-	- Computer Architecture
-	- Machine Learning
-	- Computer Vision
-    </div>
-	</div>
 
-  	<div class='paper-box-text' markdown="1">
-	<div align="left">
-	## Skills:
-	- C, C++, Python, Matlab
-	- OpenMP, MPI, CUDA
-	- Linux
-	- Verilog
-	</div>
-	</div>
-
-</div> -->
 
 # 🔥 Recent Task
 
