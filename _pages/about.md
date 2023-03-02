@@ -29,8 +29,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Linux
 - Verilog
 
-<div class='paper-box'>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-2col'>
+<div class='paper-box-2col-left' markdown="1">
 ## Research Interests:
 - MLsys
 - Distributed, Parallel, and Cluster Computing
@@ -39,7 +39,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Machine Learning
 - Computer Vision
 </div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box-2col-right' markdown="1">
 ## Skills:
 - C, C++, Python, Matlab
 - OpenMP, MPI, CUDA
