@@ -34,6 +34,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div>
 </div>
 
+## Knowledge Graph
+![1678716276181](../images/about/1678716276181.png)
 
 # 🔥 Recent Task
 
