@@ -35,7 +35,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div>
 
 ## Knowledge Graph
-<img src='images/about/1678716276181.png' alt="kg" width="80%">
+<img align="middle" src='images/about/1678716276181.png' alt="kg" width="80%">
 
 
 # 🔥 Recent Task
