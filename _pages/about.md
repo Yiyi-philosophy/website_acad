@@ -41,6 +41,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 🔥 Recent Task
 
+*Mar. 2023 - (Now)*: Implement LLM(opt175b) inference in single GPU
+
 *Oct. 2022 - (Now)*: Preparing for **ASC** (Asian Supercomputer Community)
 
 <div class='paper-box'><div class='paper-box-image'><div>
