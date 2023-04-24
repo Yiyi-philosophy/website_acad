@@ -78,10 +78,9 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 <div class='paper-box-text' markdown="1">
 *Feb. 17-21 2022*: Mathematical Modeling: MCM/ICM 2022 [Problem E](https://mathmodels.org/Problems/2022/ICM-E/2022_ICM_Problem_E.pdf) [Our article](https://yiyi-philosophy.github.io/yiran.ding/_pages/about.assets/E-2224327.pdf)
-- Led the project of "Forestry for Carbon Sequestration to Forest Management".
-- Developed logistic equation based model to estimate the carbon sequestration of different trees species. (Successful Participant)
-- Drawn 20 image in the article, using MATLAB and PPT.
-- Utilized: Least Squares method, Monte Carlo method.
+- Using mathematical modeling to optimize forest management plans based on carbon sequestration, tree growth rates, and economic value.  
+- The model aims to balance factors and maximize the forest's integrated value using carbon sequestration as the objective function and cutting rate as the decision variable. 
+- Techniques include logistic regression, Monte Carlo simulation, and single-objective planning, and the model is applied to a specific forest to demonstrate effectiveness.
 <img src="_pages/about.assets/image-20230109232046462.png" alt="image-20230109232046462" width="100%" />
 </div></div>
 
