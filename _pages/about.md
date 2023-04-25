@@ -82,16 +82,16 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div>
-	<img src="_pages/about.assets/MM_form.png" alt="MM_form" width="80%"/>
+	<img src="_pages/about.assets/MM_form.png" alt="MM_form" width="100%"/>
 	<br><br>
-	<img src="_pages/about.assets/MM_data.png" alt="MM_data" width="80%"/>
+	<img src="_pages/about.assets/MM_data.png" alt="MM_data" width="100%"/>
 </div></div>
 <div class='paper-box-text' markdown="1">
 *Feb. 17-21 2022*: Optimizing Ride-Sharing Services: 
 - Analyzes the problem of matching customers and suppliers in a large-scale ride-hailing service using greedy and simulated annealing algorithms. 
 - Develop an online model that considers various factors, such as customer satisfaction, availability, and route optimization. 
 - The models achieve high satisfaction rates(98%) and demonstrate strong stability and scalability.
-<img src="_pages/about.assets/MM_che.png" alt="MM_che" width="80%"/>
+<img src="_pages/about.assets/MM_che.png" alt="MM_che" width="60%"/>
 </div></div>
 
 
