@@ -92,7 +92,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Develop an online model that considers various factors, such as customer satisfaction, availability, and route optimization. 
 - The models achieve high satisfaction rates(98%) and demonstrate strong stability and scalability.
 <br>
-<img src="_pages/about.assets/MM_che.png" alt="MM_che" width="70%"/>
+<img align="middle" src="_pages/about.assets/MM_che.png" alt="MM_che" width="70%"/>
 </div></div>
 
 
