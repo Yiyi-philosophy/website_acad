@@ -91,7 +91,8 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Analyzes the problem of matching customers and suppliers in a large-scale ride-hailing service using greedy and simulated annealing algorithms. 
 - Develop an online model that considers various factors, such as customer satisfaction, availability, and route optimization. 
 - The models achieve high satisfaction rates(98%) and demonstrate strong stability and scalability.
-<img src="_pages/about.assets/MM_che.png" alt="MM_che" width="60%"/>
+<br>
+<img src="_pages/about.assets/MM_che.png" alt="MM_che" width="70%"/>
 </div></div>
 
 
