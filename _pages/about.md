@@ -82,11 +82,11 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 <div class='paper-box'><div class='paper-box-image'><div>
-	<img src="_pages/about.assets/MM_form" alt="MM_form" width="80%"/>
+	<img src="_pages/about.assets/MM_form.png" alt="MM_form" width="80%"/>
 	<br><br>
-	<img src="_pages/about.assets/MM_data" alt="MM_data" width="80%"/>
+	<img src="_pages/about.assets/MM_data.png" alt="MM_data" width="80%"/>
 	<br><br>
-	<img src="_pages/about.assets/MM_che" alt="MM_che" width="80%"/>
+	<img src="_pages/about.assets/MM_che.png" alt="MM_che" width="80%"/>
 </div></div>
 <div class='paper-box-text' markdown="1">
 *Feb. 17-21 2022*: Optimizing Ride-Sharing Services: 
