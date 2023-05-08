@@ -97,7 +97,7 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 
 # 📝 Publications 
-
+ 
 <div class='paper-box'><div class='paper-box-image'><div>
   <div class="badge">SCI submitted in</div>
   <img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
