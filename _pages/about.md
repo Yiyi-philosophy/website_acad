@@ -41,9 +41,22 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 🔥 Recent Task
 
+
+
 *Mar. 2023 - (Now)*: Implement LLM(opt175b) inference in single GPU
 
-*Oct. 2022 - (Now)*: Preparing for **ASC** (Asian Supercomputer Community)
+
+<div class='paper-box'><div class='paper-box-image'><div>
+	<img src="images/about/1686387116687.png" alt="image10" width="100%" />
+</div></div>
+<div class='paper-box-text' markdown="1">
+*April 2023 - May 2023*: LLM inference in Edge Device: 
+- Developed an **offline** large language model based on the **7B** Alpaca model to address privacy and security concerns with cloud deployment. 
+- Implemented **Chinese Q&A** and dialogue functions, tested against similar models, and deployed on an 8GB edge device with 16Tops computing power in int8. 
+- Expanded the Chinese vocabulary, **fine-tuned** the model with Chinese instruction data and utilized **int4** quantization to compress the model, significantly improving its understanding and execution of Chinese instructions.
+
+</div></div>
+
 
 
 <div class='paper-box'><div class='paper-box-image'><div>
