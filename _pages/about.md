@@ -13,11 +13,12 @@ Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi Un
 
 I'm preparing for the **24 fall** applications of CS PhD.
 
-#### And my latest GPA is 3.8/4.0(90/100) 5%.
+#### And my latest GPA is 3.8/4.0(90/100) 3%.
 
 <div class='paper-box-2col'>
 <div class='paper-box-2col-left' markdown="1">
 ## Research Interests:
+- LLM
 - MLsys
 - Distributed, Parallel, and Cluster Computing
 - HPC
@@ -41,10 +42,11 @@ I'm preparing for the **24 fall** applications of CS PhD.
 
 # 🔥 Recent Task
 
-
+*June 2023 - (Now)*: LLM Sequence Extension
+- Pioneered a groundbreaking **interpolation** technique for RoPE, significantly extending the sequence length of the Llama model to 32K with flash-attention, all without the need for fine-tuning.
+- Successfully conducted evaluations on various downstream tasks, including **Passkey Retrieval** and **Quality** (reading comprehension).
 
 *Mar. 2023 - (Now)*: Implement LLM(opt175b) inference in single GPU
-
 
 <div class='paper-box'><div class='paper-box-image'><div>
 	<img src="images/about/1686387116687.png" alt="image10" width="100%" />
