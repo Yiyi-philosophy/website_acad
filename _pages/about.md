@@ -11,7 +11,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Now I'm studying at School of Electronics & Information, HDU (Hangzhou Dianzi University). You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know more about me.
 
-I'm preparing for the **24 fall** applications of CS PhD.
+I'm preparing for the **25 fall** applications of CS PhD.
 
 #### And my latest GPA is 3.8/4.0(90/100) 3%.
 
@@ -28,21 +28,51 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div>
 <div class='paper-box-2col-right' markdown="1">
 ## Skills:
-- C, C++, Python, Matlab
-- OpenMP, MPI, CUDA
-- Linux
+- Python(Pytorch), C/C++, Matlab 
+- OpenMP, MPI, CUDA, Shell 
 - Verilog
 </div>
 </div>
 
 ## Knowledge Graph
 <p class="aligncenter">
-<img src='images/about/1678872663298.png' alt="kg" width="80%">
+	<img src='images/about/1678872663298.png' alt="kg" width="80%">
 </p>
+
+# 📝 Publications 
+ 
+<div class='paper-box'><div class='paper-box-image'><div>
+	<div class="badge">SCI submitted in</div>
+	<img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
+</div></div>
+
+<div class='paper-box-text' markdown="1">
+
+	<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
+</div></div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div>
+  <div class="badge">SCI submitted in</div>
+  <img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
+</div></div>
+
+<div class='paper-box-text' markdown="1">
+
+*Nov. 2021 - Aug. 2022*: Medical Image Processing
+- Led and designed the project of automatically evaluating finger tapping videos of Parkinson’s disease patients. 
+- Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
+- Utilized: Pose estimation (Mediapipe Hands), RIFE algorithm (Time Series Interpolation), LSTM, FCN.
+
+<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
+</div></div>
+
+# 📈 Internships
+
 
 # 🔥 Recent Task
 
-*June 2023 - (Now)*: LLM Sequence Extension
+*June 2023 - July 2024: LLM Sequence Extension
 - Pioneered a groundbreaking **interpolation** technique for RoPE, significantly extending the sequence length of the Llama model to 32K with flash-attention, all without the need for fine-tuning.
 - Successfully conducted evaluations on various downstream tasks, including **Passkey Retrieval** and **Quality** (reading comprehension).
 
@@ -58,7 +88,6 @@ I'm preparing for the **24 fall** applications of CS PhD.
 - Expanded the Chinese vocabulary, **fine-tuned** the model with Chinese instruction data and utilized **int4** quantization to compress the model, significantly improving its understanding and execution of Chinese instructions.
 
 </div></div>
-
 
 
 <div class='paper-box'><div class='paper-box-image'><div>
@@ -111,23 +140,15 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div></div>
 
 
-# 📝 Publications 
- 
-<div class='paper-box'><div class='paper-box-image'><div>
-  <div class="badge">SCI submitted in</div>
-  <img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
-</div></div>
+# 📖 Educations
 
-<div class='paper-box-text' markdown="1">
+- *2021.09 - 2024.06*, School of Electronics & Information, HDU, Bachelor's degree. 
+- *2020.09 - 2021.06*, School of Mathematics, Hangzhou Dianzi University(HDU), Bachelor's degree. 
 
-*Nov. 2021 - Aug. 2022*: Medical Image Processing
-- Led and designed the project of automatically evaluating finger tapping videos of Parkinson’s disease patients. 
-- Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
-- Utilized: Pose estimation (Mediapipe Hands), RIFE algorithm (Time Series Interpolation), LSTM, FCN.
+# 🎖 Honors and Awards
 
-<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
-</div></div>
-
+- *2021.09* The First Prize Scholarship, Award rate 5%
+- *2022.09* Scholarship of Provincial Government, Award rate 5%
 
 # 💻 Class
 
@@ -157,25 +178,13 @@ I'm preparing for the **24 fall** applications of CS PhD.
 </div>
 </div>
 
-# 📖 Educations
-
-- *2021.09 - 2024.06 (now)*, School of Electronics & Information, HDU, Bachelor's degree. 
-- *2020.09 - 2021.06*, School of Mathematics, Hangzhou Dianzi University(HDU), Bachelor's degree. 
-
-# 🎖 Honors and Awards
-
-- *2021.09* The First Prize Scholarship, Award rate 5%
-- *2022.09* Scholarship of Provincial Government, Award rate 5%
-
 # 🎺 Activities
 
 - Vice Minister of Data Processing Department, Student association in the Faculty of Mathematics
 	- Taught new students about programming skills such as Python, Matlab, etc.
 	- Instructed them to solve NP-hard Graph Theory Problems with Heuristic Algorithms, and Time Series Forecasting Problems with LSTM Neural Networks
 
-
-# 📈 Internships
-
+<!-- -------------------- END of MAIN CONTENT -------------------- -->
 
 # 📰 Summarize for some Papers
 
