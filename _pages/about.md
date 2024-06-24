@@ -19,17 +19,15 @@ I'm preparing for the **25 fall** applications of CS PhD.
 <div class='paper-box-2col-left' markdown="1">
 ## Research Interests:
 - LLM
-- MLsys
-- Distributed, Parallel, and Cluster Computing
+- MLsys 
 - HPC
-- Computer Architecture
-- Machine Learning
-- Computer Vision
 </div>
 <div class='paper-box-2col-right' markdown="1">
 ## Skills:
-- Python(Pytorch), C/C++, Matlab 
-- OpenMP, MPI, CUDA, Shell 
+### Language
+- Python(Pytorch, [Huggingface Transformers](https://huggingface.co/docs/transformers/index)), C/C++, Matlab 
+- OpenMP, MPI, CUDA, 
+- Shell, Git,  
 - Verilog
 </div>
 </div>
