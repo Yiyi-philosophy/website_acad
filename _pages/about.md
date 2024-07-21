@@ -18,9 +18,8 @@ I'm preparing for the **25 fall** applications of CS PhD.
 <div class='paper-box-2col'>
 <div class='paper-box-2col-left' markdown="1">
 ## Research Interests:
-- LLM
-- MLsys 
-- HPC
+I am broadly interested in the intersection between natural language processing (**NLP**) and **MLSys**, focusing on the **full potential** of LLMs and patterns of AI. I aim to achieve the **strongest** and most **complete** LLM capabilities, potentially leading to AGI or other advanced systems. Thus, I am particularly interested in the ***theoretical foundations** and **system architectures*, such as GPUs, required to support this goal.
+
 </div>
 <div class='paper-box-2col-right' markdown="1">
 ## Skills:
@@ -45,7 +44,6 @@ I'm preparing for the **25 fall** applications of CS PhD.
 </div></div>
 
 <div class='paper-box-text' markdown="1">
-
 	<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
 </div></div>
 
