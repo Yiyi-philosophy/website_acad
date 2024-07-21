@@ -37,14 +37,19 @@ I am broadly interested in the intersection between natural language processing 
 </p>
 
 # 📝 Publications 
- 
+<!-- longrope  -->
 <div class='paper-box'><div class='paper-box-image'><div>
-	<div class="badge">SCI submitted in</div>
-	<img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
+	<div class="badge">ICML Poster</div>
+	<img src='_pages/about.assets/longrope-1.png' alt="sym" width="100%"><img src='_pages/about.assets/longrope-2' alt="sym" width="100%"><img src='_pages/about.assets/longrope-3' alt="sym" width="100%">
 </div></div>
-
 <div class='paper-box-text' markdown="1">
-	<img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
+*Jul. 2023 - Jul. 2024*: LLM Sequence Extension: [LongRoPE](https://arxiv.org/pdf/2402.01694)
+- Extends the context window of pre-trained LLMs(Llama, Mistral) to **2048k** tokens with up to only **1k fine-tuning steps** at 256k training lengths, maintaining original performance.
+- Exploits **non-uniformities in positional interpolation** for better fine-tuning initialization, uses a progressive extension strategy, and **readjusts** LongRoPE to **recover short context** window performance.
+- Supported fine-tuning of **Phi-3*(mini, small) to **128k contexts*: [Phi-3 Model]("https://huggingface.co/microsoft/Phi-3-mini-128k-instruct"), [Phi-3 Report]("https://arxiv.org/pdf/2404.14219").
+  - Prepare and clean 128k-length datasets from different sources to finetuning, and methods to recover short context (4k) performance.
+]
+	
 </div></div>
 
 
@@ -52,14 +57,11 @@ I am broadly interested in the intersection between natural language processing 
   <div class="badge">SCI submitted in</div>
   <img src='_pages/about.assets/Figure01.jpg' alt="sym" width="100%"><img src='_pages/about.assets/Figure06.jpg' alt="sym" width="100%">
 </div></div>
-
 <div class='paper-box-text' markdown="1">
-
 *Nov. 2021 - Aug. 2022*: Medical Image Processing
 - Led and designed the project of automatically evaluating finger tapping videos of Parkinson’s disease patients. 
 - Developed LSTM-FCN based model to classify patients. The result has 83.7% accuracy, which in dataset of this paper defeats the state-of-the-art results in literatures. 
 - Utilized: Pose estimation (Mediapipe Hands), RIFE algorithm (Time Series Interpolation), LSTM, FCN.
-
 <img src="_pages/about.assets/Figure10.jpg" alt="Figure10" width="100%" />
 </div></div>
 
