@@ -18,14 +18,14 @@ I am broadly interested in the intersection between natural language processing 
 #### And my latest GPA is 3.8/4.0(90/100) 3%.
 
 <div class='paper-box-2col'>
-<div class='paper-box-2col-left' markdown="1">
+<div class='paper-box-2col-left' style="width: 50%; float: left;" markdown="1">
 ## Research Interests:
 - LLMs
 - MLsys
 - HPC
 </div>
 <!-- Skills -->
-<div class='paper-box-2col-right' markdown="1">
+<div class='paper-box-2col-right' style="width: 50%; float: left;" markdown="1">
 ## Skills:
 - Python(Pytorch, [Huggingface Transformers](https://huggingface.co/docs/transformers/index)), C/C++, Matlab 
 - OpenMP, MPI, CUDA, 
