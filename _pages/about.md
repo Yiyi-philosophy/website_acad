@@ -27,7 +27,6 @@ I am broadly interested in the intersection between natural language processing 
 <!-- Skills -->
 <div class='paper-box-2col-right' markdown="1">
 ## Skills:
-### Language
 - Python(Pytorch, [Huggingface Transformers](https://huggingface.co/docs/transformers/index)), C/C++, Matlab 
 - OpenMP, MPI, CUDA, 
 - Shell, Git,  
@@ -44,7 +43,9 @@ I am broadly interested in the intersection between natural language processing 
 <!-- longrope  -->
 <div class='paper-box'><div class='paper-box-image'><div>
 	<div class="badge">ICML Poster</div>
-	<img src='_pages/about.assets/longrope-1.png' alt="sym" width="100%"><img src='_pages/about.assets/longrope-2.png' alt="sym" width="100%">
+	<img src='_pages/about.assets/longrope-1.png' alt="sym" width="100%">
+	<br><br>
+	<img src='_pages/about.assets/longrope-2.png' alt="sym" width="100%">
 </div></div>
 <div class='paper-box-text' markdown="1">
 *Jul. 2023 - Jul. 2024*: LLM Sequence Extension: [LongRoPE](https://arxiv.org/pdf/2402.01694)
@@ -53,9 +54,9 @@ I am broadly interested in the intersection between natural language processing 
 - Supported fine-tuning of **Phi-3*(mini, small) to **128k contexts*: [Phi-3 Model]("https://huggingface.co/microsoft/Phi-3-mini-128k-instruct"), [Phi-3 Report]("https://arxiv.org/pdf/2404.14219").
   - Prepare and clean 128k-length datasets from different sources to finetuning, and methods to recover short context (4k) performance.
 
-<img src='_pages/about.assets/longrope-step1.png' alt="sym" width="100%">
-<img src='_pages/about.assets/longrope-step2.png' alt="sym" width="100%">
-<img src='_pages/about.assets/longrope-step3.png' alt="sym" width="100%">
+<!-- <img src='_pages/about.assets/longrope-step1.png' alt="sym" width="80%"> -->
+<img src='_pages/about.assets/longrope-step2.png' alt="sym" width="80%">
+<!-- <img src='_pages/about.assets/longrope-step3.png' alt="sym" width="80%"> -->
 </div></div>
 
 
