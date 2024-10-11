@@ -28,9 +28,10 @@ You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know m
 <div class='paper-box-2col'>
 <div class='paper-box-2col-left' style="width: 50%; float: left;" markdown="1">
 ## Research Interests:
-- LLMs
+- LLMs, NLP
 - MLsys
 - HPC
+
 </div>
 <!-- Skills -->
 <div class='paper-box-2col-right' style="width: 50%; float: left;" markdown="1">
@@ -47,7 +48,7 @@ You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know m
 	<img src='images/about/1678872663298.png' alt="kg" width="80%">
 </p>
 <p class="aligncenter">
-	<img src='/images/about/KG-2.png' alt="kg" width="80%">
+	<img src='images/about/KG-2.png' alt="kg" width="80%">
 </p>
 
 # 📝 Publications 
@@ -90,13 +91,10 @@ You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know m
 
 
 # 🔥 Recent Task
-
 *June 2023 - July 2024: LLM Sequence Extension
 - Pioneered a groundbreaking **interpolation** technique for RoPE, significantly extending the sequence length of the Llama model to 32K with flash-attention, all without the need for fine-tuning.
 - Successfully conducted evaluations on various downstream tasks, including **Passkey Retrieval** and **Quality** (reading comprehension).
-
 *Mar. 2023 - (Now)*: Implement LLM(opt175b) inference in single GPU
-
 <div class='paper-box'><div class='paper-box-image'><div>
 	<img src="images/about/1686387116687.png" alt="image10" width="100%" />
 </div></div>
@@ -160,17 +158,14 @@ You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know m
 
 
 # 📖 Educations
-
 - *2021.09 - 2024.06*, School of Electronics & Information, HDU, Bachelor's degree. 
 - *2020.09 - 2021.06*, School of Mathematics, Hangzhou Dianzi University(HDU), Bachelor's degree. 
 
 # 🎖 Honors and Awards
-
 - *2021.09* The First Prize Scholarship, Award rate 5%
 - *2022.09* Scholarship of Provincial Government, Award rate 5%
 
 # 💻 Class
-
 <div class='paper-box-2col'>
 <div class='paper-box-2col-left' markdown="1">
 ## Online Courses
