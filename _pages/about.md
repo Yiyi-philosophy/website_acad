@@ -11,19 +11,16 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 
-I'm graduated at School of Electronics & Information, HDU (Hangzhou Dianzi University) on June 2024. 
+I'm graduated at School of Electronics & Information, HDU (Hangzhou Dianzi University) on June 2024. You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know more about me.
 
 I am deeply focused on harnessing the **full potential of LLMs**—from small to large (sizes), and from short to long (contexts)—using the best patterns (e.g., Transformer, RNN). My goal is to develop the most **robust** and **comprehensive** LLM capabilities, potentially leading to AGI or other advanced systems. I am particularly fascinated by the ***theoretical foundations*** (NLP, ML) and ***system architectures*** (such as GPUs) necessary to achieve this vision.
 
 > I often think of a model as a ship: some ships are heavy, slow, but long-lasting, while others are small, quick, but easily overturned by waves. Evaluation serves as navigation to avoid detours, and data acts as fuel, determining how close you get to your destination.
 
-<!-- I am broadly interested in the intersection between **NLP** and **MLSys**, focusing on the **full potential** of LLMs(from small to big) and patterns of AI. I aim to achieve the **strongest** and most **complete** LLM capabilities, potentially leading to AGI or other advanced systems. Thus, I am particularly interested in the ***theoretical foundations** and **system architectures*, such as GPUs, required to support this goal.  -->
-
-You can visit [My Blog](https://yiyi-philosophy.github.io/simplicity/) to know more about me.
-
+#### And my latest GPA is 3.8/4.0(90/100) 3%.
 > I'm preparing for the **25 fall** applications of CS/ECE/... PhD.
 
-#### And my latest GPA is 3.8/4.0(90/100) 3%.
+> My **deep motivation** comes from tackling fundamental but significant problems, pushing through multiple failures, and ultimately achieving meaningful progress and results. I am driven by the desire to change the world, whether by creating new innovations or making significant contributions to existing fields. The process of solving complex, foundational challenges excites me, and I find fulfillment in making a lasting impact through hard work and perseverance."
 
 <div class='paper-box-2col'>
 <div class='paper-box-2col-left' style="width: 50%; float: left;" markdown="1">
